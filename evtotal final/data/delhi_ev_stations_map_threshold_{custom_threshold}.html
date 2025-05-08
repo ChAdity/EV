@@ -1,0 +1,4570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cfe36348c1839e404e8ea07f38138785 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cfe36348c1839e404e8ea07f38138785" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cfe36348c1839e404e8ea07f38138785 = L.map(
+                "map_cfe36348c1839e404e8ea07f38138785",
+                {
+                    center: [28.6139, 77.209],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d3ae065e0e908c0ce4ca90736e514fa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8d3ae065e0e908c0ce4ca90736e514fa.addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var marker_6795d59246616693abbffe2374f06412 = L.marker(
+                [28.732698009566853, 76.88753950973047],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_750feba618f656a99e007082686a1343 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_428c837f643eab06711c69530e85e4d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b34f28187b1a1ea8f0d87736180cb5d4 = $(`<div id="html_b34f28187b1a1ea8f0d87736180cb5d4" style="width: 100.0%; height: 100.0%;">EV Station 399<br>Threshold: 0.1<br>Lat: 28.7327, Lon: 76.8875<br>Prob: 0.121</div>`)[0];
+                popup_428c837f643eab06711c69530e85e4d2.setContent(html_b34f28187b1a1ea8f0d87736180cb5d4);
+            
+        
+
+        marker_6795d59246616693abbffe2374f06412.bindPopup(popup_428c837f643eab06711c69530e85e4d2)
+        ;
+
+        
+    
+    
+                marker_6795d59246616693abbffe2374f06412.setIcon(icon_750feba618f656a99e007082686a1343);
+            
+    
+            var marker_b3208b4cdd06d6fb328b15c600ed339f = L.marker(
+                [28.732698009566853, 76.88753950973047],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_7a9fb64f9f03fdb5f29fb32530333b08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e15ba348799d86f6893bbd7d02d3409f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f3042216b32326b4a339fcef4012fff = $(`<div id="html_9f3042216b32326b4a339fcef4012fff" style="width: 100.0%; height: 100.0%;">EV Station 400<br>Threshold: 0.1<br>Lat: 28.7327, Lon: 76.8875<br>Prob: 0.121</div>`)[0];
+                popup_e15ba348799d86f6893bbd7d02d3409f.setContent(html_9f3042216b32326b4a339fcef4012fff);
+            
+        
+
+        marker_b3208b4cdd06d6fb328b15c600ed339f.bindPopup(popup_e15ba348799d86f6893bbd7d02d3409f)
+        ;
+
+        
+    
+    
+                marker_b3208b4cdd06d6fb328b15c600ed339f.setIcon(icon_7a9fb64f9f03fdb5f29fb32530333b08);
+            
+    
+            var marker_59b6663abe493e9c6238eec64c2b143a = L.marker(
+                [28.732698009566853, 76.88753950973047],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_bafa856d1e58fcf5bcd04734ceabc724 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a609c608dd10dc924267db8d89b75fd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b02059e4933938c9b19185bd6484623 = $(`<div id="html_5b02059e4933938c9b19185bd6484623" style="width: 100.0%; height: 100.0%;">EV Station 401<br>Threshold: 0.1<br>Lat: 28.7327, Lon: 76.8875<br>Prob: 0.121</div>`)[0];
+                popup_a609c608dd10dc924267db8d89b75fd1.setContent(html_5b02059e4933938c9b19185bd6484623);
+            
+        
+
+        marker_59b6663abe493e9c6238eec64c2b143a.bindPopup(popup_a609c608dd10dc924267db8d89b75fd1)
+        ;
+
+        
+    
+    
+                marker_59b6663abe493e9c6238eec64c2b143a.setIcon(icon_bafa856d1e58fcf5bcd04734ceabc724);
+            
+    
+            var marker_1cf1add1d62adbe9bbd6c88206a5d4d2 = L.marker(
+                [28.732698009566853, 76.88753950973047],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_9758cc7c8c1cac134f9cee1303442840 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25c5c1d68233bea06f961bf79a396f49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_170b827b3f66f830bf5cb5be1307775d = $(`<div id="html_170b827b3f66f830bf5cb5be1307775d" style="width: 100.0%; height: 100.0%;">EV Station 402<br>Threshold: 0.1<br>Lat: 28.7327, Lon: 76.8875<br>Prob: 0.121</div>`)[0];
+                popup_25c5c1d68233bea06f961bf79a396f49.setContent(html_170b827b3f66f830bf5cb5be1307775d);
+            
+        
+
+        marker_1cf1add1d62adbe9bbd6c88206a5d4d2.bindPopup(popup_25c5c1d68233bea06f961bf79a396f49)
+        ;
+
+        
+    
+    
+                marker_1cf1add1d62adbe9bbd6c88206a5d4d2.setIcon(icon_9758cc7c8c1cac134f9cee1303442840);
+            
+    
+            var marker_c181d5d58a2401d5183fb8f968934aa5 = L.marker(
+                [28.604936710893742, 76.98750170593372],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_043e5317bb6255bca650abea953ba4bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ad89519de2f43a28fa73a571711a50e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2805d634635af0e3c94a312d1d7b5626 = $(`<div id="html_2805d634635af0e3c94a312d1d7b5626" style="width: 100.0%; height: 100.0%;">EV Station 1038<br>Threshold: 0.1<br>Lat: 28.6049, Lon: 76.9875<br>Prob: 0.681</div>`)[0];
+                popup_5ad89519de2f43a28fa73a571711a50e.setContent(html_2805d634635af0e3c94a312d1d7b5626);
+            
+        
+
+        marker_c181d5d58a2401d5183fb8f968934aa5.bindPopup(popup_5ad89519de2f43a28fa73a571711a50e)
+        ;
+
+        
+    
+    
+                marker_c181d5d58a2401d5183fb8f968934aa5.setIcon(icon_043e5317bb6255bca650abea953ba4bb);
+            
+    
+            var marker_604016ba94468c768f3ceb90069271fe = L.marker(
+                [28.622978775804473, 76.98784153183396],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_97d44313a0e0be3a023820363667b68a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acf56bb046e7f0bd88099bc7ea419767 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0c42edda17cc5d07a7cfa3b5cf801ea = $(`<div id="html_b0c42edda17cc5d07a7cfa3b5cf801ea" style="width: 100.0%; height: 100.0%;">EV Station 1039<br>Threshold: 0.1<br>Lat: 28.6230, Lon: 76.9878<br>Prob: 0.348</div>`)[0];
+                popup_acf56bb046e7f0bd88099bc7ea419767.setContent(html_b0c42edda17cc5d07a7cfa3b5cf801ea);
+            
+        
+
+        marker_604016ba94468c768f3ceb90069271fe.bindPopup(popup_acf56bb046e7f0bd88099bc7ea419767)
+        ;
+
+        
+    
+    
+                marker_604016ba94468c768f3ceb90069271fe.setIcon(icon_97d44313a0e0be3a023820363667b68a);
+            
+    
+            var marker_4d19b922a60911cee7eed934e35ef956 = L.marker(
+                [28.459996262059914, 77.02562656629841],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_8ad6f35d59bb9d0925574d09aaed1bb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a6c82aeb189a9a43f5722dc8c51d96f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_886ac6c7a5ea7c01fa49d59e25b2ff1d = $(`<div id="html_886ac6c7a5ea7c01fa49d59e25b2ff1d" style="width: 100.0%; height: 100.0%;">EV Station 1098<br>Threshold: 0.1<br>Lat: 28.4600, Lon: 77.0256<br>Prob: 0.671</div>`)[0];
+                popup_7a6c82aeb189a9a43f5722dc8c51d96f.setContent(html_886ac6c7a5ea7c01fa49d59e25b2ff1d);
+            
+        
+
+        marker_4d19b922a60911cee7eed934e35ef956.bindPopup(popup_7a6c82aeb189a9a43f5722dc8c51d96f)
+        ;
+
+        
+    
+    
+                marker_4d19b922a60911cee7eed934e35ef956.setIcon(icon_8ad6f35d59bb9d0925574d09aaed1bb4);
+            
+    
+            var marker_34d737a21d21d1dadcc9308b977f254f = L.marker(
+                [28.60433103369006, 77.02838955925196],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_53a6e8eb5f14e2dd3bd37ab5e8089e9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c9e9892d17301eba0fd48e70cbd2f08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83bd6644fc42f029b843673e0ec208f2 = $(`<div id="html_83bd6644fc42f029b843673e0ec208f2" style="width: 100.0%; height: 100.0%;">EV Station 1106<br>Threshold: 0.1<br>Lat: 28.6043, Lon: 77.0284<br>Prob: 0.498</div>`)[0];
+                popup_5c9e9892d17301eba0fd48e70cbd2f08.setContent(html_83bd6644fc42f029b843673e0ec208f2);
+            
+        
+
+        marker_34d737a21d21d1dadcc9308b977f254f.bindPopup(popup_5c9e9892d17301eba0fd48e70cbd2f08)
+        ;
+
+        
+    
+    
+                marker_34d737a21d21d1dadcc9308b977f254f.setIcon(icon_53a6e8eb5f14e2dd3bd37ab5e8089e9f);
+            
+    
+            var marker_d961e95a538cc3dd1e8635fd00d9b49f = L.marker(
+                [28.622372646929666, 77.02873636464498],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_d865aa488261b64363aac6ca127dbcb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1980b0678ba9c196cdd5b257cb80809c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7de8a932ae135cc07a6b14c319d0ff51 = $(`<div id="html_7de8a932ae135cc07a6b14c319d0ff51" style="width: 100.0%; height: 100.0%;">EV Station 1107<br>Threshold: 0.1<br>Lat: 28.6224, Lon: 77.0287<br>Prob: 0.512</div>`)[0];
+                popup_1980b0678ba9c196cdd5b257cb80809c.setContent(html_7de8a932ae135cc07a6b14c319d0ff51);
+            
+        
+
+        marker_d961e95a538cc3dd1e8635fd00d9b49f.bindPopup(popup_1980b0678ba9c196cdd5b257cb80809c)
+        ;
+
+        
+    
+    
+                marker_d961e95a538cc3dd1e8635fd00d9b49f.setIcon(icon_d865aa488261b64363aac6ca127dbcb2);
+            
+    
+            var marker_45bb6cf48a548e918980e4a2bcf60f1b = L.marker(
+                [28.423606883148484, 77.04534772236313],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_b0aeb5f2d4caa64609440ecdd3bf1c76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_558d7a2f2eb6ce000c96c4447f87724c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e91dc7dbdd47bed0015c0436e820884 = $(`<div id="html_6e91dc7dbdd47bed0015c0436e820884" style="width: 100.0%; height: 100.0%;">EV Station 1130<br>Threshold: 0.1<br>Lat: 28.4236, Lon: 77.0453<br>Prob: 0.130</div>`)[0];
+                popup_558d7a2f2eb6ce000c96c4447f87724c.setContent(html_6e91dc7dbdd47bed0015c0436e820884);
+            
+        
+
+        marker_45bb6cf48a548e918980e4a2bcf60f1b.bindPopup(popup_558d7a2f2eb6ce000c96c4447f87724c)
+        ;
+
+        
+    
+    
+                marker_45bb6cf48a548e918980e4a2bcf60f1b.setIcon(icon_b0aeb5f2d4caa64609440ecdd3bf1c76);
+            
+    
+            var marker_6070a8dae615db6371e2e05e28d0f15b = L.marker(
+                [28.441648785613378, 77.04569480960035],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_28b2f8dc7720487f892edf57f8d45980 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0eaa0d8a0db9501fc3296e365c4f11f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9eb78f9bb110757f0a47d5cac8c786cc = $(`<div id="html_9eb78f9bb110757f0a47d5cac8c786cc" style="width: 100.0%; height: 100.0%;">EV Station 1131<br>Threshold: 0.1<br>Lat: 28.4416, Lon: 77.0457<br>Prob: 0.259</div>`)[0];
+                popup_0eaa0d8a0db9501fc3296e365c4f11f1.setContent(html_9eb78f9bb110757f0a47d5cac8c786cc);
+            
+        
+
+        marker_6070a8dae615db6371e2e05e28d0f15b.bindPopup(popup_0eaa0d8a0db9501fc3296e365c4f11f1)
+        ;
+
+        
+    
+    
+                marker_6070a8dae615db6371e2e05e28d0f15b.setIcon(icon_28b2f8dc7720487f892edf57f8d45980);
+            
+    
+            var marker_29c3006ae3ff5ccf405acb5442bd3c90 = L.marker(
+                [28.459690636334454, 77.04604221655188],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_30dcd6530132c14db1414e5d7aed51ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d01965f463aa3c14e430c3792ef4ca7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa206da62e813b70bee250760e825066 = $(`<div id="html_fa206da62e813b70bee250760e825066" style="width: 100.0%; height: 100.0%;">EV Station 1132<br>Threshold: 0.1<br>Lat: 28.4597, Lon: 77.0460<br>Prob: 0.124</div>`)[0];
+                popup_d01965f463aa3c14e430c3792ef4ca7a.setContent(html_fa206da62e813b70bee250760e825066);
+            
+        
+
+        marker_29c3006ae3ff5ccf405acb5442bd3c90.bindPopup(popup_d01965f463aa3c14e430c3792ef4ca7a)
+        ;
+
+        
+    
+    
+                marker_29c3006ae3ff5ccf405acb5442bd3c90.setIcon(icon_30dcd6530132c14db1414e5d7aed51ec);
+            
+    
+            var marker_e519d2e6586d00b2efb9dc3d91c16906 = L.marker(
+                [28.51381587779773, 77.04708635799973],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_68943cd51033a919fc68caf8c81031e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6756dd82f80253d87723336155a7b930 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dda84e7c132438318c82d1d85baf2c93 = $(`<div id="html_dda84e7c132438318c82d1d85baf2c93" style="width: 100.0%; height: 100.0%;">EV Station 1135<br>Threshold: 0.1<br>Lat: 28.5138, Lon: 77.0471<br>Prob: 0.125</div>`)[0];
+                popup_6756dd82f80253d87723336155a7b930.setContent(html_dda84e7c132438318c82d1d85baf2c93);
+            
+        
+
+        marker_e519d2e6586d00b2efb9dc3d91c16906.bindPopup(popup_6756dd82f80253d87723336155a7b930)
+        ;
+
+        
+    
+    
+                marker_e519d2e6586d00b2efb9dc3d91c16906.setIcon(icon_68943cd51033a919fc68caf8c81031e4);
+            
+    
+            var marker_be16ddd8ef483411349b3332221010e5 = L.marker(
+                [28.585982140565594, 77.048483036622],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_47c8c3a3111d935b9960f0f8f53f716c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61dd96d85dd6c33642bfe9bef428fb2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05d702ef30c0f5e8b2cd90d1f74765cb = $(`<div id="html_05d702ef30c0f5e8b2cd90d1f74765cb" style="width: 100.0%; height: 100.0%;">EV Station 1139<br>Threshold: 0.1<br>Lat: 28.5860, Lon: 77.0485<br>Prob: 0.216</div>`)[0];
+                popup_61dd96d85dd6c33642bfe9bef428fb2f.setContent(html_05d702ef30c0f5e8b2cd90d1f74765cb);
+            
+        
+
+        marker_be16ddd8ef483411349b3332221010e5.bindPopup(popup_61dd96d85dd6c33642bfe9bef428fb2f)
+        ;
+
+        
+    
+    
+                marker_be16ddd8ef483411349b3332221010e5.setIcon(icon_47c8c3a3111d935b9960f0f8f53f716c);
+            
+    
+            var marker_77b86eeaefba77e4717cf6e304ad7fad = L.marker(
+                [28.604023576483986, 77.04883300961532],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_cbf6f3e67fca5cae545ecdf8831018c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3041b41e73d5ef11d10d6a773547766c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af2dc65d6fa02f6d90817315e87e455f = $(`<div id="html_af2dc65d6fa02f6d90817315e87e455f" style="width: 100.0%; height: 100.0%;">EV Station 1140<br>Threshold: 0.1<br>Lat: 28.6040, Lon: 77.0488<br>Prob: 0.221</div>`)[0];
+                popup_3041b41e73d5ef11d10d6a773547766c.setContent(html_af2dc65d6fa02f6d90817315e87e455f);
+            
+        
+
+        marker_77b86eeaefba77e4717cf6e304ad7fad.bindPopup(popup_3041b41e73d5ef11d10d6a773547766c)
+        ;
+
+        
+    
+    
+                marker_77b86eeaefba77e4717cf6e304ad7fad.setIcon(icon_cbf6f3e67fca5cae545ecdf8831018c2);
+            
+    
+            var marker_9d1ef1d101beeda21a0163ddc36727ec = L.marker(
+                [28.423298658605606, 77.06575613499251],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_3f8102672e8753ce457834f59613f16a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2f8688de7b5018f2be3c5f08fae8305 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7277e8739fa2d1e44bd94b0db22e465 = $(`<div id="html_f7277e8739fa2d1e44bd94b0db22e465" style="width: 100.0%; height: 100.0%;">EV Station 1164<br>Threshold: 0.1<br>Lat: 28.4233, Lon: 77.0658<br>Prob: 0.278</div>`)[0];
+                popup_e2f8688de7b5018f2be3c5f08fae8305.setContent(html_f7277e8739fa2d1e44bd94b0db22e465);
+            
+        
+
+        marker_9d1ef1d101beeda21a0163ddc36727ec.bindPopup(popup_e2f8688de7b5018f2be3c5f08fae8305)
+        ;
+
+        
+    
+    
+                marker_9d1ef1d101beeda21a0163ddc36727ec.setIcon(icon_3f8102672e8753ce457834f59613f16a);
+            
+    
+            var marker_889fa68f1b387910f903b0076cca845b = L.marker(
+                [28.45938195010518, 77.06645754686048],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_7f65f89b69cd999918c164165c5541b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c634ac41a39212924939266d84018723 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffcf969c992e1cdde72ec3871f06fe57 = $(`<div id="html_ffcf969c992e1cdde72ec3871f06fe57" style="width: 100.0%; height: 100.0%;">EV Station 1166<br>Threshold: 0.1<br>Lat: 28.4594, Lon: 77.0665<br>Prob: 0.436</div>`)[0];
+                popup_c634ac41a39212924939266d84018723.setContent(html_ffcf969c992e1cdde72ec3871f06fe57);
+            
+        
+
+        marker_889fa68f1b387910f903b0076cca845b.bindPopup(popup_c634ac41a39212924939266d84018723)
+        ;
+
+        
+    
+    
+                marker_889fa68f1b387910f903b0076cca845b.setIcon(icon_7f65f89b69cd999918c164165c5541b0);
+            
+    
+            var marker_e81a843d0a725ede19d2f70d29cceaa3 = L.marker(
+                [28.477423518100895, 77.06680873737109],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_0255d61ae3d139a3d6cb137391ecdefe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5297b557fe39f768cdd2921285fc1fe6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1765cb6ceaa9d5c9b2d4a991aebfe1f = $(`<div id="html_d1765cb6ceaa9d5c9b2d4a991aebfe1f" style="width: 100.0%; height: 100.0%;">EV Station 1167<br>Threshold: 0.1<br>Lat: 28.4774, Lon: 77.0668<br>Prob: 0.226</div>`)[0];
+                popup_5297b557fe39f768cdd2921285fc1fe6.setContent(html_d1765cb6ceaa9d5c9b2d4a991aebfe1f);
+            
+        
+
+        marker_e81a843d0a725ede19d2f70d29cceaa3.bindPopup(popup_5297b557fe39f768cdd2921285fc1fe6)
+        ;
+
+        
+    
+    
+                marker_e81a843d0a725ede19d2f70d29cceaa3.setIcon(icon_0255d61ae3d139a3d6cb137391ecdefe);
+            
+    
+            var marker_f4d68c28603ad8aa86d1de88b2ea9a6d = L.marker(
+                [28.495465034228864, 77.06716025124368],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_fa0bd88017a9c19ae5f312657f282433 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1f0e8d7ce11e76164b6c738ad7a5397 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a564740cf3ed05842da16ec49322ce0 = $(`<div id="html_8a564740cf3ed05842da16ec49322ce0" style="width: 100.0%; height: 100.0%;">EV Station 1168<br>Threshold: 0.1<br>Lat: 28.4955, Lon: 77.0672<br>Prob: 0.315</div>`)[0];
+                popup_a1f0e8d7ce11e76164b6c738ad7a5397.setContent(html_8a564740cf3ed05842da16ec49322ce0);
+            
+        
+
+        marker_f4d68c28603ad8aa86d1de88b2ea9a6d.bindPopup(popup_a1f0e8d7ce11e76164b6c738ad7a5397)
+        ;
+
+        
+    
+    
+                marker_f4d68c28603ad8aa86d1de88b2ea9a6d.setIcon(icon_fa0bd88017a9c19ae5f312657f282433);
+            
+    
+            var marker_801dc01dad0a2b004d6c3205d60db6c9 = L.marker(
+                [28.5856718360214, 77.06892267921931],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_315d84cde8bb0eaa775dfc5da797a915 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1164eae52d4df1a6bfb37dfbdfe12ea0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95b7254b7a6765712a13f696298d9081 = $(`<div id="html_95b7254b7a6765712a13f696298d9081" style="width: 100.0%; height: 100.0%;">EV Station 1173<br>Threshold: 0.1<br>Lat: 28.5857, Lon: 77.0689<br>Prob: 0.422</div>`)[0];
+                popup_1164eae52d4df1a6bfb37dfbdfe12ea0.setContent(html_95b7254b7a6765712a13f696298d9081);
+            
+        
+
+        marker_801dc01dad0a2b004d6c3205d60db6c9.bindPopup(popup_1164eae52d4df1a6bfb37dfbdfe12ea0)
+        ;
+
+        
+    
+    
+                marker_801dc01dad0a2b004d6c3205d60db6c9.setIcon(icon_315d84cde8bb0eaa775dfc5da797a915);
+            
+    
+            var marker_001956d312451a9c7d34dc902fb139a6 = L.marker(
+                [28.477111538299503, 77.08722720793207],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_6ab58853ef35b0e23bee89cb71f948be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51b73a065a1434c90371f28a56e7d691 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93c77a6429892c4fc6e5a1a2bf6531a5 = $(`<div id="html_93c77a6429892c4fc6e5a1a2bf6531a5" style="width: 100.0%; height: 100.0%;">EV Station 1201<br>Threshold: 0.1<br>Lat: 28.4771, Lon: 77.0872<br>Prob: 0.218</div>`)[0];
+                popup_51b73a065a1434c90371f28a56e7d691.setContent(html_93c77a6429892c4fc6e5a1a2bf6531a5);
+            
+        
+
+        marker_001956d312451a9c7d34dc902fb139a6.bindPopup(popup_51b73a065a1434c90371f28a56e7d691)
+        ;
+
+        
+    
+    
+                marker_001956d312451a9c7d34dc902fb139a6.setIcon(icon_6ab58853ef35b0e23bee89cb71f948be);
+            
+    
+            var marker_24286f3cdda20ce1a7ed2d06ffc0ab3e = L.marker(
+                [28.495152821103964, 77.0875821883715],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_a427418e85a9acaf5535183a6e960cb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0078658cb81d36361169df7c896e499e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5174c1e2e66ee1eccedcbbe6ab56462c = $(`<div id="html_5174c1e2e66ee1eccedcbbe6ab56462c" style="width: 100.0%; height: 100.0%;">EV Station 1202<br>Threshold: 0.1<br>Lat: 28.4952, Lon: 77.0876<br>Prob: 0.435</div>`)[0];
+                popup_0078658cb81d36361169df7c896e499e.setContent(html_5174c1e2e66ee1eccedcbbe6ab56462c);
+            
+        
+
+        marker_24286f3cdda20ce1a7ed2d06ffc0ab3e.bindPopup(popup_0078658cb81d36361169df7c896e499e)
+        ;
+
+        
+    
+    
+                marker_24286f3cdda20ce1a7ed2d06ffc0ab3e.setIcon(icon_a427418e85a9acaf5535183a6e960cb6);
+            
+    
+            var marker_714544be019c27d1d392f0ce1a16306c = L.marker(
+                [28.58535845511672, 77.08936199704908],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f4f70188daf18132bab492e050cdb2e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edeabf4fb6b1599e98711755c71c1675 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34ebb04ba5d2873044ecdc55fbefa6c6 = $(`<div id="html_34ebb04ba5d2873044ecdc55fbefa6c6" style="width: 100.0%; height: 100.0%;">EV Station 1207<br>Threshold: 0.1<br>Lat: 28.5854, Lon: 77.0894<br>Prob: 0.103</div>`)[0];
+                popup_edeabf4fb6b1599e98711755c71c1675.setContent(html_34ebb04ba5d2873044ecdc55fbefa6c6);
+            
+        
+
+        marker_714544be019c27d1d392f0ce1a16306c.bindPopup(popup_edeabf4fb6b1599e98711755c71c1675)
+        ;
+
+        
+    
+    
+                marker_714544be019c27d1d392f0ce1a16306c.setIcon(icon_f4f70188daf18132bab492e050cdb2e3);
+            
+    
+            var marker_7abd0c9a2fb061f355cd98b90c05cd2b = L.marker(
+                [28.62144034427314, 77.09007621463154],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_cc520293f80ade5a88c768d0ddeacab4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31d72c34e784d10733051f52dd01b937 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d63a35c4d79a45044b67de2be186500f = $(`<div id="html_d63a35c4d79a45044b67de2be186500f" style="width: 100.0%; height: 100.0%;">EV Station 1209<br>Threshold: 0.1<br>Lat: 28.6214, Lon: 77.0901<br>Prob: 0.122</div>`)[0];
+                popup_31d72c34e784d10733051f52dd01b937.setContent(html_d63a35c4d79a45044b67de2be186500f);
+            
+        
+
+        marker_7abd0c9a2fb061f355cd98b90c05cd2b.bindPopup(popup_31d72c34e784d10733051f52dd01b937)
+        ;
+
+        
+    
+    
+                marker_7abd0c9a2fb061f355cd98b90c05cd2b.setIcon(icon_cc520293f80ade5a88c768d0ddeacab4);
+            
+    
+            var marker_8052b91ee25879f77b3b13433c4ee8dc = L.marker(
+                [28.65752202488811, 77.09079174598587],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_c3e36d4f4d8a0dc1dbfc030c8f6603fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f53440db0c3a0d676b27ef2e6649e710 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecc408daeb0aaa1363c8b14b25d432fe = $(`<div id="html_ecc408daeb0aaa1363c8b14b25d432fe" style="width: 100.0%; height: 100.0%;">EV Station 1211<br>Threshold: 0.1<br>Lat: 28.6575, Lon: 77.0908<br>Prob: 0.146</div>`)[0];
+                popup_f53440db0c3a0d676b27ef2e6649e710.setContent(html_ecc408daeb0aaa1363c8b14b25d432fe);
+            
+        
+
+        marker_8052b91ee25879f77b3b13433c4ee8dc.bindPopup(popup_f53440db0c3a0d676b27ef2e6649e710)
+        ;
+
+        
+    
+    
+                marker_8052b91ee25879f77b3b13433c4ee8dc.setIcon(icon_c3e36d4f4d8a0dc1dbfc030c8f6603fe);
+            
+    
+            var marker_70315b10450ec450a0dcc55c2c49d6a9 = L.marker(
+                [28.729684759734827, 77.09222675764549],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_b6ef6f48d23783fbe514e27773288a79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2455100e35ea83b0d4af7f323278f99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e3677d3fa37e70fbc7e38cc33bc8918 = $(`<div id="html_2e3677d3fa37e70fbc7e38cc33bc8918" style="width: 100.0%; height: 100.0%;">EV Station 1215<br>Threshold: 0.1<br>Lat: 28.7297, Lon: 77.0922<br>Prob: 0.114</div>`)[0];
+                popup_a2455100e35ea83b0d4af7f323278f99.setContent(html_2e3677d3fa37e70fbc7e38cc33bc8918);
+            
+        
+
+        marker_70315b10450ec450a0dcc55c2c49d6a9.bindPopup(popup_a2455100e35ea83b0d4af7f323278f99)
+        ;
+
+        
+    
+    
+                marker_70315b10450ec450a0dcc55c2c49d6a9.setIcon(icon_b6ef6f48d23783fbe514e27773288a79);
+            
+    
+            var marker_9a5c736779530c4baf51dde86e7ddbf2 = L.marker(
+                [28.422673042444856, 77.1065719890828],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_37e2eca5d1eaed7e0026102070a4b6de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73369c68c6be8787c7e2e4fb77736bb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78e1636c8d7311f0986362945d1363c1 = $(`<div id="html_78e1636c8d7311f0986362945d1363c1" style="width: 100.0%; height: 100.0%;">EV Station 1232<br>Threshold: 0.1<br>Lat: 28.4227, Lon: 77.1066<br>Prob: 0.132</div>`)[0];
+                popup_73369c68c6be8787c7e2e4fb77736bb7.setContent(html_78e1636c8d7311f0986362945d1363c1);
+            
+        
+
+        marker_9a5c736779530c4baf51dde86e7ddbf2.bindPopup(popup_73369c68c6be8787c7e2e4fb77736bb7)
+        ;
+
+        
+    
+    
+                marker_9a5c736779530c4baf51dde86e7ddbf2.setIcon(icon_37e2eca5d1eaed7e0026102070a4b6de);
+            
+    
+            var marker_2db24f19f835cf7c44c65f41de2cb47f = L.marker(
+                [28.440714245634272, 77.10692944736647],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_2edbfa2df5a32fefbad5eda0df658119 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8455a76af271463132189ed024c329f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_561820e6169cb967594eec62dbf363a8 = $(`<div id="html_561820e6169cb967594eec62dbf363a8" style="width: 100.0%; height: 100.0%;">EV Station 1233<br>Threshold: 0.1<br>Lat: 28.4407, Lon: 77.1069<br>Prob: 0.165</div>`)[0];
+                popup_8455a76af271463132189ed024c329f6.setContent(html_561820e6169cb967594eec62dbf363a8);
+            
+        
+
+        marker_2db24f19f835cf7c44c65f41de2cb47f.bindPopup(popup_8455a76af271463132189ed024c329f6)
+        ;
+
+        
+    
+    
+                marker_2db24f19f835cf7c44c65f41de2cb47f.setIcon(icon_2edbfa2df5a32fefbad5eda0df658119);
+            
+    
+            var marker_351a96d4ae44a49c2f91e81021755957 = L.marker(
+                [28.5128785384006, 77.10836257545762],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_df0ac57f69f03807c5a6e40b6fff9aba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a6e7feaa9f81e2e9f3ed17b84284702 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e43423b05a50e9a28db7ecd993f64979 = $(`<div id="html_e43423b05a50e9a28db7ecd993f64979" style="width: 100.0%; height: 100.0%;">EV Station 1237<br>Threshold: 0.1<br>Lat: 28.5129, Lon: 77.1084<br>Prob: 0.824</div>`)[0];
+                popup_6a6e7feaa9f81e2e9f3ed17b84284702.setContent(html_e43423b05a50e9a28db7ecd993f64979);
+            
+        
+
+        marker_351a96d4ae44a49c2f91e81021755957.bindPopup(popup_6a6e7feaa9f81e2e9f3ed17b84284702)
+        ;
+
+        
+    
+    
+                marker_351a96d4ae44a49c2f91e81021755957.setIcon(icon_df0ac57f69f03807c5a6e40b6fff9aba);
+            
+    
+            var marker_0e9e24f0c9fe99f56406a14cfe18658d = L.marker(
+                [28.58504199803238, 77.10980098691164],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_673969119a6d17ce41a4f6de1fe1625e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f34de941998bc930d263b4f211f84c63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab99f71d631dda9755bb84a7c329f551 = $(`<div id="html_ab99f71d631dda9755bb84a7c329f551" style="width: 100.0%; height: 100.0%;">EV Station 1241<br>Threshold: 0.1<br>Lat: 28.5850, Lon: 77.1098<br>Prob: 0.155</div>`)[0];
+                popup_f34de941998bc930d263b4f211f84c63.setContent(html_ab99f71d631dda9755bb84a7c329f551);
+            
+        
+
+        marker_0e9e24f0c9fe99f56406a14cfe18658d.bindPopup(popup_f34de941998bc930d263b4f211f84c63)
+        ;
+
+        
+    
+    
+                marker_0e9e24f0c9fe99f56406a14cfe18658d.setIcon(icon_673969119a6d17ce41a4f6de1fe1625e);
+            
+    
+            var marker_7fd5b8ab9f31d1a1273242c5d965924f = L.marker(
+                [28.6391640450922, 77.11088327191503],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_5c75f210233542d4dc002a1724e5eb18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28a0f957b069405fe25faacf82438548 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd738df1bad60eaec87537a8ad6104da = $(`<div id="html_fd738df1bad60eaec87537a8ad6104da" style="width: 100.0%; height: 100.0%;">EV Station 1244<br>Threshold: 0.1<br>Lat: 28.6392, Lon: 77.1109<br>Prob: 0.672</div>`)[0];
+                popup_28a0f957b069405fe25faacf82438548.setContent(html_fd738df1bad60eaec87537a8ad6104da);
+            
+        
+
+        marker_7fd5b8ab9f31d1a1273242c5d965924f.bindPopup(popup_28a0f957b069405fe25faacf82438548)
+        ;
+
+        
+    
+    
+                marker_7fd5b8ab9f31d1a1273242c5d965924f.setIcon(icon_5c75f210233542d4dc002a1724e5eb18);
+            
+    
+            var marker_611c3b50842b0df68ce9dfb7db1846bb = L.marker(
+                [28.69328562201084, 77.1119685439073],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_d388308e304a049933d05768a0c40752 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2255abf48f3dc2895cf40b0bb1005e20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8be78123131780b1f86f6cf995b60758 = $(`<div id="html_8be78123131780b1f86f6cf995b60758" style="width: 100.0%; height: 100.0%;">EV Station 1247<br>Threshold: 0.1<br>Lat: 28.6933, Lon: 77.1120<br>Prob: 0.136</div>`)[0];
+                popup_2255abf48f3dc2895cf40b0bb1005e20.setContent(html_8be78123131780b1f86f6cf995b60758);
+            
+        
+
+        marker_611c3b50842b0df68ce9dfb7db1846bb.bindPopup(popup_2255abf48f3dc2895cf40b0bb1005e20)
+        ;
+
+        
+    
+    
+                marker_611c3b50842b0df68ce9dfb7db1846bb.setIcon(icon_d388308e304a049933d05768a0c40752);
+            
+    
+            var marker_ea831a183407253503be8ad86aa3ff68 = L.marker(
+                [28.71132604306355, 77.11233096613843],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_c5e28df8527ec45247dc3e2744d49e9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ecfec635d7af0557777a2331b17385a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdd79c7b3dc721b4d5d9cf4d5f261150 = $(`<div id="html_bdd79c7b3dc721b4d5d9cf4d5f261150" style="width: 100.0%; height: 100.0%;">EV Station 1248<br>Threshold: 0.1<br>Lat: 28.7113, Lon: 77.1123<br>Prob: 0.245</div>`)[0];
+                popup_4ecfec635d7af0557777a2331b17385a.setContent(html_bdd79c7b3dc721b4d5d9cf4d5f261150);
+            
+        
+
+        marker_ea831a183407253503be8ad86aa3ff68.bindPopup(popup_4ecfec635d7af0557777a2331b17385a)
+        ;
+
+        
+    
+    
+                marker_ea831a183407253503be8ad86aa3ff68.setIcon(icon_c5e28df8527ec45247dc3e2744d49e9d);
+            
+    
+            var marker_fc0a21c54c2ba16fa2e5dccd89193cbb = L.marker(
+                [28.72936641178323, 77.11269372122258],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_a07d6aac527c8c9f5f7978246ca67012 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c135a3f608f87b95bb1481367ea8f5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aac25b571820898b63a95de7c62fae64 = $(`<div id="html_aac25b571820898b63a95de7c62fae64" style="width: 100.0%; height: 100.0%;">EV Station 1249<br>Threshold: 0.1<br>Lat: 28.7294, Lon: 77.1127<br>Prob: 0.184</div>`)[0];
+                popup_3c135a3f608f87b95bb1481367ea8f5f.setContent(html_aac25b571820898b63a95de7c62fae64);
+            
+        
+
+        marker_fc0a21c54c2ba16fa2e5dccd89193cbb.bindPopup(popup_3c135a3f608f87b95bb1481367ea8f5f)
+        ;
+
+        
+    
+    
+                marker_fc0a21c54c2ba16fa2e5dccd89193cbb.setIcon(icon_a07d6aac527c8c9f5f7978246ca67012);
+            
+    
+            var marker_99dda2344b196f8ae08d694c5e392d90 = L.marker(
+                [28.548641315886403, 77.12951281759531],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f5e2e9f5819d3b696490c385571ebcc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4e2243e465535728e26092ab77f6422 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40fa2be1138e618c7948af6ce646eeab = $(`<div id="html_40fa2be1138e618c7948af6ce646eeab" style="width: 100.0%; height: 100.0%;">EV Station 1273<br>Threshold: 0.1<br>Lat: 28.5486, Lon: 77.1295<br>Prob: 0.233</div>`)[0];
+                popup_d4e2243e465535728e26092ab77f6422.setContent(html_40fa2be1138e618c7948af6ce646eeab);
+            
+        
+
+        marker_99dda2344b196f8ae08d694c5e392d90.bindPopup(popup_d4e2243e465535728e26092ab77f6422)
+        ;
+
+        
+    
+    
+                marker_99dda2344b196f8ae08d694c5e392d90.setIcon(icon_f5e2e9f5819d3b696490c385571ebcc9);
+            
+    
+            var marker_22ec2b8100945097e94adcab836f97fa = L.marker(
+                [28.584722464951007, 77.13023964560772],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_1419308f644a8bd4172a84eb28ce615e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a6a34f2d09a856d070397f8fcc0078b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83d5e0f39bbed12ff0403ad76c5ead21 = $(`<div id="html_83d5e0f39bbed12ff0403ad76c5ead21" style="width: 100.0%; height: 100.0%;">EV Station 1275<br>Threshold: 0.1<br>Lat: 28.5847, Lon: 77.1302<br>Prob: 0.536</div>`)[0];
+                popup_5a6a34f2d09a856d070397f8fcc0078b.setContent(html_83d5e0f39bbed12ff0403ad76c5ead21);
+            
+        
+
+        marker_22ec2b8100945097e94adcab836f97fa.bindPopup(popup_5a6a34f2d09a856d070397f8fcc0078b)
+        ;
+
+        
+    
+    
+                marker_22ec2b8100945097e94adcab836f97fa.setIcon(icon_1419308f644a8bd4172a84eb28ce615e);
+            
+    
+            var marker_826aff3ff2e9b5f9dd98d625b3c19f4b = L.marker(
+                [28.602762961126647, 77.13060356104127],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_12d0defe9ca90830ae72e40bb44a8cf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbf2627bdd58372aae9f53e5bd066219 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc5bc369d6eea41a96a1148d29cefedf = $(`<div id="html_fc5bc369d6eea41a96a1148d29cefedf" style="width: 100.0%; height: 100.0%;">EV Station 1276<br>Threshold: 0.1<br>Lat: 28.6028, Lon: 77.1306<br>Prob: 0.902</div>`)[0];
+                popup_fbf2627bdd58372aae9f53e5bd066219.setContent(html_fc5bc369d6eea41a96a1148d29cefedf);
+            
+        
+
+        marker_826aff3ff2e9b5f9dd98d625b3c19f4b.bindPopup(popup_fbf2627bdd58372aae9f53e5bd066219)
+        ;
+
+        
+    
+    
+                marker_826aff3ff2e9b5f9dd98d625b3c19f4b.setIcon(icon_12d0defe9ca90830ae72e40bb44a8cf6);
+            
+    
+            var marker_d08e5f582b9236a348f339cc34cb8807 = L.marker(
+                [28.692964657481376, 77.13242816218386],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f030e3a1f3ba5b57f58c787de1288019 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90b986524415f831f12f30b193e32f6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e92a8ed1f5c7da8dc95d4c697d445430 = $(`<div id="html_e92a8ed1f5c7da8dc95d4c697d445430" style="width: 100.0%; height: 100.0%;">EV Station 1281<br>Threshold: 0.1<br>Lat: 28.6930, Lon: 77.1324<br>Prob: 0.494</div>`)[0];
+                popup_90b986524415f831f12f30b193e32f6b.setContent(html_e92a8ed1f5c7da8dc95d4c697d445430);
+            
+        
+
+        marker_d08e5f582b9236a348f339cc34cb8807.bindPopup(popup_90b986524415f831f12f30b193e32f6b)
+        ;
+
+        
+    
+    
+                marker_d08e5f582b9236a348f339cc34cb8807.setIcon(icon_f030e3a1f3ba5b57f58c787de1288019);
+            
+    
+            var marker_af12fa98618793c62618f46608435a8e = L.marker(
+                [28.71100483968046, 77.13279408891005],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f7d4ae7f606e889e535466adbaa2ceec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83ba3eeb700939e786e86a2d39542910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2558ea97de0f52489d5b29a8e1d0e94 = $(`<div id="html_f2558ea97de0f52489d5b29a8e1d0e94" style="width: 100.0%; height: 100.0%;">EV Station 1282<br>Threshold: 0.1<br>Lat: 28.7110, Lon: 77.1328<br>Prob: 0.210</div>`)[0];
+                popup_83ba3eeb700939e786e86a2d39542910.setContent(html_f2558ea97de0f52489d5b29a8e1d0e94);
+            
+        
+
+        marker_af12fa98618793c62618f46608435a8e.bindPopup(popup_83ba3eeb700939e786e86a2d39542910)
+        ;
+
+        
+    
+    
+                marker_af12fa98618793c62618f46608435a8e.setIcon(icon_f7d4ae7f606e889e535466adbaa2ceec);
+            
+    
+            var marker_c3dc439ced5578089c3934c666cb9b05 = L.marker(
+                [28.747085046815876, 77.13352695081178],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_1053d55cc963ab4579c4103df7aee556 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d1be848d7de89c097e2daa97bec0de8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75fd68caaef5c1e321ff8996036c7143 = $(`<div id="html_75fd68caaef5c1e321ff8996036c7143" style="width: 100.0%; height: 100.0%;">EV Station 1284<br>Threshold: 0.1<br>Lat: 28.7471, Lon: 77.1335<br>Prob: 0.129</div>`)[0];
+                popup_7d1be848d7de89c097e2daa97bec0de8.setContent(html_75fd68caaef5c1e321ff8996036c7143);
+            
+        
+
+        marker_c3dc439ced5578089c3934c666cb9b05.bindPopup(popup_7d1be848d7de89c097e2daa97bec0de8)
+        ;
+
+        
+    
+    
+                marker_c3dc439ced5578089c3934c666cb9b05.setIcon(icon_1053d55cc963ab4579c4103df7aee556);
+            
+    
+            var marker_7cbe0540eb6f1db4a12542035ced4e3b = L.marker(
+                [28.746760269007122, 77.15399675566401],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_23f1b5c558031322177d70359a27d683 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db8a326db6cbe214a8f521b5e9c2b470 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecc2cad927274192cd93201d7f7015ca = $(`<div id="html_ecc2cad927274192cd93201d7f7015ca" style="width: 100.0%; height: 100.0%;">EV Station 1318<br>Threshold: 0.1<br>Lat: 28.7468, Lon: 77.1540<br>Prob: 0.110</div>`)[0];
+                popup_db8a326db6cbe214a8f521b5e9c2b470.setContent(html_ecc2cad927274192cd93201d7f7015ca);
+            
+        
+
+        marker_7cbe0540eb6f1db4a12542035ced4e3b.bindPopup(popup_db8a326db6cbe214a8f521b5e9c2b470)
+        ;
+
+        
+    
+    
+                marker_7cbe0540eb6f1db4a12542035ced4e3b.setIcon(icon_23f1b5c558031322177d70359a27d683);
+            
+    
+            var marker_132f9572463f9166a3f4aa851e4787f7 = L.marker(
+                [28.51191359753253, 77.16963582102987],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f3e4a9afea3ea8c5caf806c594fc516a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4619d983f72576449b3fc840d5e5cf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_953f79367911c6fc11a324273ac921a9 = $(`<div id="html_953f79367911c6fc11a324273ac921a9" style="width: 100.0%; height: 100.0%;">EV Station 1339<br>Threshold: 0.1<br>Lat: 28.5119, Lon: 77.1696<br>Prob: 0.276</div>`)[0];
+                popup_b4619d983f72576449b3fc840d5e5cf4.setContent(html_953f79367911c6fc11a324273ac921a9);
+            
+        
+
+        marker_132f9572463f9166a3f4aa851e4787f7.bindPopup(popup_b4619d983f72576449b3fc840d5e5cf4)
+        ;
+
+        
+    
+    
+                marker_132f9572463f9166a3f4aa851e4787f7.setIcon(icon_f3e4a9afea3ea8c5caf806c594fc516a);
+            
+    
+            var marker_76f70ff76c4be9d63915b78ecca74947 = L.marker(
+                [28.529953819559097, 77.17000534466679],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_e0387b16ee6444a1d4d701e9e58bcb6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e5a097dfa3f5a7372f3c051ab4c54a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8c40b025ec47ff3aec745570e8d0a36 = $(`<div id="html_e8c40b025ec47ff3aec745570e8d0a36" style="width: 100.0%; height: 100.0%;">EV Station 1340<br>Threshold: 0.1<br>Lat: 28.5300, Lon: 77.1700<br>Prob: 0.106</div>`)[0];
+                popup_3e5a097dfa3f5a7372f3c051ab4c54a0.setContent(html_e8c40b025ec47ff3aec745570e8d0a36);
+            
+        
+
+        marker_76f70ff76c4be9d63915b78ecca74947.bindPopup(popup_3e5a097dfa3f5a7372f3c051ab4c54a0)
+        ;
+
+        
+    
+    
+                marker_76f70ff76c4be9d63915b78ecca74947.setIcon(icon_e0387b16ee6444a1d4d701e9e58bcb6c);
+            
+    
+            var marker_b5069790974031583bb61b5bc4e0fd0a = L.marker(
+                [28.54799398925137, 77.17037520832757],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_939ddecbf76b099be174b10f51f8f5fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d06e2c1f0efe8e41c835e0150e7a82e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bc7c6a9a3067c91fd4149792c873445 = $(`<div id="html_6bc7c6a9a3067c91fd4149792c873445" style="width: 100.0%; height: 100.0%;">EV Station 1341<br>Threshold: 0.1<br>Lat: 28.5480, Lon: 77.1704<br>Prob: 0.419</div>`)[0];
+                popup_0d06e2c1f0efe8e41c835e0150e7a82e.setContent(html_6bc7c6a9a3067c91fd4149792c873445);
+            
+        
+
+        marker_b5069790974031583bb61b5bc4e0fd0a.bindPopup(popup_0d06e2c1f0efe8e41c835e0150e7a82e)
+        ;
+
+        
+    
+    
+                marker_b5069790974031583bb61b5bc4e0fd0a.setIcon(icon_939ddecbf76b099be174b10f51f8f5fb);
+            
+    
+            var marker_d208abcec48bc9af26c1b9370e5268bc = L.marker(
+                [28.56603410658523, 77.17074541225806],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_32756b8aa35ac00160998e042d7a3c2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66d98ddabee585c4e6b0a990220e99cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e013263ebece16f40e0d134a689f9a69 = $(`<div id="html_e013263ebece16f40e0d134a689f9a69" style="width: 100.0%; height: 100.0%;">EV Station 1342<br>Threshold: 0.1<br>Lat: 28.5660, Lon: 77.1707<br>Prob: 0.503</div>`)[0];
+                popup_66d98ddabee585c4e6b0a990220e99cd.setContent(html_e013263ebece16f40e0d134a689f9a69);
+            
+        
+
+        marker_d208abcec48bc9af26c1b9370e5268bc.bindPopup(popup_66d98ddabee585c4e6b0a990220e99cd)
+        ;
+
+        
+    
+    
+                marker_d208abcec48bc9af26c1b9370e5268bc.setIcon(icon_32756b8aa35ac00160998e042d7a3c2b);
+            
+    
+            var marker_319b1d3edec740d11a5922bb0ed556d1 = L.marker(
+                [28.584074171536518, 77.17111595670464],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_7f54cb8a0917efe0078cde203e47988b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_029f33fcb87e5d51d3cb358736c5c6b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37819abee693dd9414a0cb2ca6713551 = $(`<div id="html_37819abee693dd9414a0cb2ca6713551" style="width: 100.0%; height: 100.0%;">EV Station 1343<br>Threshold: 0.1<br>Lat: 28.5841, Lon: 77.1711<br>Prob: 0.532</div>`)[0];
+                popup_029f33fcb87e5d51d3cb358736c5c6b0.setContent(html_37819abee693dd9414a0cb2ca6713551);
+            
+        
+
+        marker_319b1d3edec740d11a5922bb0ed556d1.bindPopup(popup_029f33fcb87e5d51d3cb358736c5c6b0)
+        ;
+
+        
+    
+    
+                marker_319b1d3edec740d11a5922bb0ed556d1.setIcon(icon_7f54cb8a0917efe0078cde203e47988b);
+            
+    
+            var marker_1058a98c68c4d588fdd2571c48f94ef5 = L.marker(
+                [28.638194051853873, 77.17222963560805],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_204162e0b57aaa4bbf7d107cdb441279 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba4b3e89cbd42c9ecf2c95a8fc8c9d03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa39e269f74d36ec762ac0825d1399c4 = $(`<div id="html_aa39e269f74d36ec762ac0825d1399c4" style="width: 100.0%; height: 100.0%;">EV Station 1346<br>Threshold: 0.1<br>Lat: 28.6382, Lon: 77.1722<br>Prob: 0.150</div>`)[0];
+                popup_ba4b3e89cbd42c9ecf2c95a8fc8c9d03.setContent(html_aa39e269f74d36ec762ac0825d1399c4);
+            
+        
+
+        marker_1058a98c68c4d588fdd2571c48f94ef5.bindPopup(popup_ba4b3e89cbd42c9ecf2c95a8fc8c9d03)
+        ;
+
+        
+    
+    
+                marker_1058a98c68c4d588fdd2571c48f94ef5.setIcon(icon_204162e0b57aaa4bbf7d107cdb441279);
+            
+    
+            var marker_54af92b2d5c8187379711683ff6d6588 = L.marker(
+                [28.692313459860685, 77.17334638805231],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_1a0928ea636f02bd5b5aeccae89b9a1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70d85965d4df7db0496449f6725ca51c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dbab688e6ca5984da42eb3f7b4ffbe1 = $(`<div id="html_5dbab688e6ca5984da42eb3f7b4ffbe1" style="width: 100.0%; height: 100.0%;">EV Station 1349<br>Threshold: 0.1<br>Lat: 28.6923, Lon: 77.1733<br>Prob: 0.307</div>`)[0];
+                popup_70d85965d4df7db0496449f6725ca51c.setContent(html_5dbab688e6ca5984da42eb3f7b4ffbe1);
+            
+        
+
+        marker_54af92b2d5c8187379711683ff6d6588.bindPopup(popup_70d85965d4df7db0496449f6725ca51c)
+        ;
+
+        
+    
+    
+                marker_54af92b2d5c8187379711683ff6d6588.setIcon(icon_1a0928ea636f02bd5b5aeccae89b9a1d);
+            
+    
+            var marker_be2ccdf31b7c5991265a8ab1584bedd6 = L.marker(
+                [28.710353157459476, 77.17371932303367],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_348a50ae08178e1ed6219c5a7468838b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a93c5c3002afb01963454a71963d8fa4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99047022af02ac8d60f25dcf83e950a1 = $(`<div id="html_99047022af02ac8d60f25dcf83e950a1" style="width: 100.0%; height: 100.0%;">EV Station 1350<br>Threshold: 0.1<br>Lat: 28.7104, Lon: 77.1737<br>Prob: 0.395</div>`)[0];
+                popup_a93c5c3002afb01963454a71963d8fa4.setContent(html_99047022af02ac8d60f25dcf83e950a1);
+            
+        
+
+        marker_be2ccdf31b7c5991265a8ab1584bedd6.bindPopup(popup_a93c5c3002afb01963454a71963d8fa4)
+        ;
+
+        
+    
+    
+                marker_be2ccdf31b7c5991265a8ab1584bedd6.setIcon(icon_348a50ae08178e1ed6219c5a7468838b);
+            
+    
+            var marker_528851b4976343dfa579bb5ec5719a2f = L.marker(
+                [28.728392802483114, 77.17409260051286],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_1233d757b5c4009f5fe46c9c22ad0e5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa0f278b8578c54e0a45788537fc7f85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02523b59e58331fd252692cdf5ea058e = $(`<div id="html_02523b59e58331fd252692cdf5ea058e" style="width: 100.0%; height: 100.0%;">EV Station 1351<br>Threshold: 0.1<br>Lat: 28.7284, Lon: 77.1741<br>Prob: 0.223</div>`)[0];
+                popup_fa0f278b8578c54e0a45788537fc7f85.setContent(html_02523b59e58331fd252692cdf5ea058e);
+            
+        
+
+        marker_528851b4976343dfa579bb5ec5719a2f.bindPopup(popup_fa0f278b8578c54e0a45788537fc7f85)
+        ;
+
+        
+    
+    
+                marker_528851b4976343dfa579bb5ec5719a2f.setIcon(icon_1233d757b5c4009f5fe46c9c22ad0e5d);
+            
+    
+            var marker_0c3e5db31c6ed7f1c94379177705815a = L.marker(
+                [28.746432394907643, 77.17446622073908],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_e6d883beb50572de11b3a1756d30cd51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_742eb2e6b7c06eb6498b89f6fff90042 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8634cdec9274642408ffce69b7dc0689 = $(`<div id="html_8634cdec9274642408ffce69b7dc0689" style="width: 100.0%; height: 100.0%;">EV Station 1352<br>Threshold: 0.1<br>Lat: 28.7464, Lon: 77.1745<br>Prob: 0.142</div>`)[0];
+                popup_742eb2e6b7c06eb6498b89f6fff90042.setContent(html_8634cdec9274642408ffce69b7dc0689);
+            
+        
+
+        marker_0c3e5db31c6ed7f1c94379177705815a.bindPopup(popup_742eb2e6b7c06eb6498b89f6fff90042)
+        ;
+
+        
+    
+    
+                marker_0c3e5db31c6ed7f1c94379177705815a.setIcon(icon_e6d883beb50572de11b3a1756d30cd51);
+            
+    
+            var marker_b77af0051900abe9618087cfdc8a3814 = L.marker(
+                [28.493545788288586, 77.1896869085065],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_ff5049773b45e7a9de703965885e4226 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59527986d41b7d218a3793f07cfd8e8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cf2c8c9479f7fd29cef7b1583668176 = $(`<div id="html_4cf2c8c9479f7fd29cef7b1583668176" style="width: 100.0%; height: 100.0%;">EV Station 1372<br>Threshold: 0.1<br>Lat: 28.4935, Lon: 77.1897<br>Prob: 0.155</div>`)[0];
+                popup_59527986d41b7d218a3793f07cfd8e8d.setContent(html_4cf2c8c9479f7fd29cef7b1583668176);
+            
+        
+
+        marker_b77af0051900abe9618087cfdc8a3814.bindPopup(popup_59527986d41b7d218a3793f07cfd8e8d)
+        ;
+
+        
+    
+    
+                marker_b77af0051900abe9618087cfdc8a3814.setIcon(icon_ff5049773b45e7a9de703965885e4226);
+            
+    
+            var marker_18443a040982efbbaee56ec791b38357 = L.marker(
+                [28.51158581777757, 77.19005956091665],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_d2084419d12fd6c0be7c25eb7f1e1c92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7aeade747ed53c20f4bb9dd3c194ccfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe5295b07768b46625905d73b0f65739 = $(`<div id="html_fe5295b07768b46625905d73b0f65739" style="width: 100.0%; height: 100.0%;">EV Station 1373<br>Threshold: 0.1<br>Lat: 28.5116, Lon: 77.1901<br>Prob: 0.721</div>`)[0];
+                popup_7aeade747ed53c20f4bb9dd3c194ccfe.setContent(html_fe5295b07768b46625905d73b0f65739);
+            
+        
+
+        marker_18443a040982efbbaee56ec791b38357.bindPopup(popup_7aeade747ed53c20f4bb9dd3c194ccfe)
+        ;
+
+        
+    
+    
+                marker_18443a040982efbbaee56ec791b38357.setIcon(icon_d2084419d12fd6c0be7c25eb7f1e1c92);
+            
+    
+            var marker_725fcb4c3721453121a34e4148805545 = L.marker(
+                [28.529625794875198, 77.19043255629383],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_81ff38cb0e91a8dcecef7b8621e8950c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2f0950b2512de4f358aed16cf89d535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53c5a5998f0440c88abb18ac605dafd6 = $(`<div id="html_53c5a5998f0440c88abb18ac605dafd6" style="width: 100.0%; height: 100.0%;">EV Station 1374<br>Threshold: 0.1<br>Lat: 28.5296, Lon: 77.1904<br>Prob: 0.406</div>`)[0];
+                popup_b2f0950b2512de4f358aed16cf89d535.setContent(html_53c5a5998f0440c88abb18ac605dafd6);
+            
+        
+
+        marker_725fcb4c3721453121a34e4148805545.bindPopup(popup_b2f0950b2512de4f358aed16cf89d535)
+        ;
+
+        
+    
+    
+                marker_725fcb4c3721453121a34e4148805545.setIcon(icon_81ff38cb0e91a8dcecef7b8621e8950c);
+            
+    
+            var marker_c1be7a7b7bc7dc4d08af130849fc29a1 = L.marker(
+                [28.54766571955722, 77.19080589488597],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_23767d9bc0c799aec60d52208a7303f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ab597f9bb35d4b6770d6d61029fd9b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79f8e74947b7806d50d3052b9726c042 = $(`<div id="html_79f8e74947b7806d50d3052b9726c042" style="width: 100.0%; height: 100.0%;">EV Station 1375<br>Threshold: 0.1<br>Lat: 28.5477, Lon: 77.1908<br>Prob: 0.818</div>`)[0];
+                popup_2ab597f9bb35d4b6770d6d61029fd9b7.setContent(html_79f8e74947b7806d50d3052b9726c042);
+            
+        
+
+        marker_c1be7a7b7bc7dc4d08af130849fc29a1.bindPopup(popup_2ab597f9bb35d4b6770d6d61029fd9b7)
+        ;
+
+        
+    
+    
+                marker_c1be7a7b7bc7dc4d08af130849fc29a1.setIcon(icon_23767d9bc0c799aec60d52208a7303f5);
+            
+    
+            var marker_8daf4ba5cddadbacf82b01559a2a24d4 = L.marker(
+                [28.565705591799386, 77.19117957694134],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_d80a9df6552c076f0c850c03c368bf7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_135f5661a918f0dbcaaa3f93013393bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b35f27b10cbff1f479c4302f39e578a3 = $(`<div id="html_b35f27b10cbff1f479c4302f39e578a3" style="width: 100.0%; height: 100.0%;">EV Station 1376<br>Threshold: 0.1<br>Lat: 28.5657, Lon: 77.1912<br>Prob: 0.758</div>`)[0];
+                popup_135f5661a918f0dbcaaa3f93013393bd.setContent(html_b35f27b10cbff1f479c4302f39e578a3);
+            
+        
+
+        marker_8daf4ba5cddadbacf82b01559a2a24d4.bindPopup(popup_135f5661a918f0dbcaaa3f93013393bd)
+        ;
+
+        
+    
+    
+                marker_8daf4ba5cddadbacf82b01559a2a24d4.setIcon(icon_d80a9df6552c076f0c850c03c368bf7d);
+            
+    
+            var marker_234260edff188be2d01fc247e3ca5988 = L.marker(
+                [28.58374541157747, 77.19155360270845],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_5d8dff1be948f8d2f05d62034b7a72d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b0c667b93406cdaf9d7bb2e48ea41f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9f9ad17b67b1d6457ca776e2efd0b59 = $(`<div id="html_d9f9ad17b67b1d6457ca776e2efd0b59" style="width: 100.0%; height: 100.0%;">EV Station 1377<br>Threshold: 0.1<br>Lat: 28.5837, Lon: 77.1916<br>Prob: 0.124</div>`)[0];
+                popup_4b0c667b93406cdaf9d7bb2e48ea41f2.setContent(html_d9f9ad17b67b1d6457ca776e2efd0b59);
+            
+        
+
+        marker_234260edff188be2d01fc247e3ca5988.bindPopup(popup_4b0c667b93406cdaf9d7bb2e48ea41f2)
+        ;
+
+        
+    
+    
+                marker_234260edff188be2d01fc247e3ca5988.setIcon(icon_5d8dff1be948f8d2f05d62034b7a72d3);
+            
+    
+            var marker_e636b27001bd0ebb263ce19911f49e37 = L.marker(
+                [28.60178517886728, 77.19192797243625],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_4bbfd1c5f8e42246c4ff2bee10a165d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5580d1e5e5c625d929ff4f0477eb5c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dfd6d61dc9a0f273785c21c4a84ce51 = $(`<div id="html_5dfd6d61dc9a0f273785c21c4a84ce51" style="width: 100.0%; height: 100.0%;">EV Station 1378<br>Threshold: 0.1<br>Lat: 28.6018, Lon: 77.1919<br>Prob: 0.356</div>`)[0];
+                popup_c5580d1e5e5c625d929ff4f0477eb5c2.setContent(html_5dfd6d61dc9a0f273785c21c4a84ce51);
+            
+        
+
+        marker_e636b27001bd0ebb263ce19911f49e37.bindPopup(popup_c5580d1e5e5c625d929ff4f0477eb5c2)
+        ;
+
+        
+    
+    
+                marker_e636b27001bd0ebb263ce19911f49e37.setIcon(icon_4bbfd1c5f8e42246c4ff2bee10a165d2);
+            
+    
+            var marker_23fe1c9b31b8c91eb78c8bb48cfca34e = L.marker(
+                [28.637864555885272, 77.19267774477103],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_07de60db3d96016e6cb637e4d76c9aa3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1711e4f3d01c985cdffdd50a7ce35b6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed958ee68e81840be59a5424adc33d40 = $(`<div id="html_ed958ee68e81840be59a5424adc33d40" style="width: 100.0%; height: 100.0%;">EV Station 1380<br>Threshold: 0.1<br>Lat: 28.6379, Lon: 77.1927<br>Prob: 0.522</div>`)[0];
+                popup_1711e4f3d01c985cdffdd50a7ce35b6d.setContent(html_ed958ee68e81840be59a5424adc33d40);
+            
+        
+
+        marker_23fe1c9b31b8c91eb78c8bb48cfca34e.bindPopup(popup_1711e4f3d01c985cdffdd50a7ce35b6d)
+        ;
+
+        
+    
+    
+                marker_23fe1c9b31b8c91eb78c8bb48cfca34e.setIcon(icon_07de60db3d96016e6cb637e4d76c9aa3);
+            
+    
+            var marker_ea34cfeca8fd95df4040f74187e37637 = L.marker(
+                [28.655904165565122, 77.19305314787745],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_764499d57a8ea6fbae18be399562ec62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a04e3552ff0e87745db431a88c8255ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6198605026b7c9499cfb392a4487946e = $(`<div id="html_6198605026b7c9499cfb392a4487946e" style="width: 100.0%; height: 100.0%;">EV Station 1381<br>Threshold: 0.1<br>Lat: 28.6559, Lon: 77.1931<br>Prob: 0.474</div>`)[0];
+                popup_a04e3552ff0e87745db431a88c8255ef.setContent(html_6198605026b7c9499cfb392a4487946e);
+            
+        
+
+        marker_ea34cfeca8fd95df4040f74187e37637.bindPopup(popup_a04e3552ff0e87745db431a88c8255ef)
+        ;
+
+        
+    
+    
+                marker_ea34cfeca8fd95df4040f74187e37637.setIcon(icon_764499d57a8ea6fbae18be399562ec62);
+            
+    
+            var marker_b6af8cd60add79145fb4db6d83f81035 = L.marker(
+                [28.673943722659978, 77.19342889594338],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_48c4607d0da9a595cef9eb19a3fe3b09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49d6518127832aa4d74f3b890245291d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9fad7c83d71e905673cc0d55f705aaa = $(`<div id="html_c9fad7c83d71e905673cc0d55f705aaa" style="width: 100.0%; height: 100.0%;">EV Station 1382<br>Threshold: 0.1<br>Lat: 28.6739, Lon: 77.1934<br>Prob: 0.323</div>`)[0];
+                popup_49d6518127832aa4d74f3b890245291d.setContent(html_c9fad7c83d71e905673cc0d55f705aaa);
+            
+        
+
+        marker_b6af8cd60add79145fb4db6d83f81035.bindPopup(popup_49d6518127832aa4d74f3b890245291d)
+        ;
+
+        
+    
+    
+                marker_b6af8cd60add79145fb4db6d83f81035.setIcon(icon_48c4607d0da9a595cef9eb19a3fe3b09);
+            
+    
+            var marker_c57d1f86c6a5c40a38cacf02d92b4fc8 = L.marker(
+                [28.691983227145712, 77.19380498921934],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_164b6ede9bddbb3f09f3190b1b88285a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4acc038d382b62af29dd998e5f79794b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37709c1c9065f31defa3463149e59079 = $(`<div id="html_37709c1c9065f31defa3463149e59079" style="width: 100.0%; height: 100.0%;">EV Station 1383<br>Threshold: 0.1<br>Lat: 28.6920, Lon: 77.1938<br>Prob: 0.111</div>`)[0];
+                popup_4acc038d382b62af29dd998e5f79794b.setContent(html_37709c1c9065f31defa3463149e59079);
+            
+        
+
+        marker_c57d1f86c6a5c40a38cacf02d92b4fc8.bindPopup(popup_4acc038d382b62af29dd998e5f79794b)
+        ;
+
+        
+    
+    
+                marker_c57d1f86c6a5c40a38cacf02d92b4fc8.setIcon(icon_164b6ede9bddbb3f09f3190b1b88285a);
+            
+    
+            var marker_a2674fa5bf40da763511902ad343bf74 = L.marker(
+                [28.511254971936605, 77.21048295783643],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_7bb0fc04dbe7e6bcba2f6892921b56f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14deb74c9fff8a1434715d4ffbecd9a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e915fc71713fbe52be5b02d50b9473e4 = $(`<div id="html_e915fc71713fbe52be5b02d50b9473e4" style="width: 100.0%; height: 100.0%;">EV Station 1407<br>Threshold: 0.1<br>Lat: 28.5113, Lon: 77.2105<br>Prob: 0.374</div>`)[0];
+                popup_14deb74c9fff8a1434715d4ffbecd9a8.setContent(html_e915fc71713fbe52be5b02d50b9473e4);
+            
+        
+
+        marker_a2674fa5bf40da763511902ad343bf74.bindPopup(popup_14deb74c9fff8a1434715d4ffbecd9a8)
+        ;
+
+        
+    
+    
+                marker_a2674fa5bf40da763511902ad343bf74.setIcon(icon_7bb0fc04dbe7e6bcba2f6892921b56f0);
+            
+    
+            var marker_fe857087e9bd310ebdecdbd9adac6e80 = L.marker(
+                [28.52929470181571, 77.21085942470594],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_28b78f0cb6ba34cd2d617c9b1e7d50b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b4ea080e9dcf5ff0deb64b5a8b754e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_661d38bc9a6304dc2782312150329ec0 = $(`<div id="html_661d38bc9a6304dc2782312150329ec0" style="width: 100.0%; height: 100.0%;">EV Station 1408<br>Threshold: 0.1<br>Lat: 28.5293, Lon: 77.2109<br>Prob: 0.678</div>`)[0];
+                popup_5b4ea080e9dcf5ff0deb64b5a8b754e1.setContent(html_661d38bc9a6304dc2782312150329ec0);
+            
+        
+
+        marker_fe857087e9bd310ebdecdbd9adac6e80.bindPopup(popup_5b4ea080e9dcf5ff0deb64b5a8b754e1)
+        ;
+
+        
+    
+    
+                marker_fe857087e9bd310ebdecdbd9adac6e80.setIcon(icon_28b78f0cb6ba34cd2d617c9b1e7d50b0);
+            
+    
+            var marker_4ddc6e1106d2d42e3ac4ea24b56463ed = L.marker(
+                [28.547334379197128, 77.21123623798127],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_a5713a1e64d50d6833f55983a7498d3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ecd9052b42a90bf516703e8256f515d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_685eb6430db5aeb3961373ee9c0c905c = $(`<div id="html_685eb6430db5aeb3961373ee9c0c905c" style="width: 100.0%; height: 100.0%;">EV Station 1409<br>Threshold: 0.1<br>Lat: 28.5473, Lon: 77.2112<br>Prob: 0.616</div>`)[0];
+                popup_3ecd9052b42a90bf516703e8256f515d.setContent(html_685eb6430db5aeb3961373ee9c0c905c);
+            
+        
+
+        marker_4ddc6e1106d2d42e3ac4ea24b56463ed.bindPopup(popup_3ecd9052b42a90bf516703e8256f515d)
+        ;
+
+        
+    
+    
+                marker_4ddc6e1106d2d42e3ac4ea24b56463ed.setIcon(icon_a5713a1e64d50d6833f55983a7498d3a);
+            
+    
+            var marker_a5bbdafb65fe032556e2ecb686467732 = L.marker(
+                [28.565374004056526, 77.21161339791288],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_c304059734312012a1391a29471c41b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bef0a7e95106bedbc87ddad49376475d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6042e16a00020607d538bca73e85456 = $(`<div id="html_e6042e16a00020607d538bca73e85456" style="width: 100.0%; height: 100.0%;">EV Station 1410<br>Threshold: 0.1<br>Lat: 28.5654, Lon: 77.2116<br>Prob: 0.268</div>`)[0];
+                popup_bef0a7e95106bedbc87ddad49376475d.setContent(html_e6042e16a00020607d538bca73e85456);
+            
+        
+
+        marker_a5bbdafb65fe032556e2ecb686467732.bindPopup(popup_bef0a7e95106bedbc87ddad49376475d)
+        ;
+
+        
+    
+    
+                marker_a5bbdafb65fe032556e2ecb686467732.setIcon(icon_c304059734312012a1391a29471c41b1);
+            
+    
+            var marker_ba03408dca9a5eb801fdfd6c6f98fe39 = L.marker(
+                [28.61949256325944, 77.21274696015594],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_63c73acd1b068735f65b35b332eb232f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_832e5f4a15646cf5a78e1a3b3682feb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_869a6724ad6c707c88679c3678aaf620 = $(`<div id="html_869a6724ad6c707c88679c3678aaf620" style="width: 100.0%; height: 100.0%;">EV Station 1413<br>Threshold: 0.1<br>Lat: 28.6195, Lon: 77.2127<br>Prob: 0.951</div>`)[0];
+                popup_832e5f4a15646cf5a78e1a3b3682feb8.setContent(html_869a6724ad6c707c88679c3678aaf620);
+            
+        
+
+        marker_ba03408dca9a5eb801fdfd6c6f98fe39.bindPopup(popup_832e5f4a15646cf5a78e1a3b3682feb8)
+        ;
+
+        
+    
+    
+                marker_ba03408dca9a5eb801fdfd6c6f98fe39.setIcon(icon_63c73acd1b068735f65b35b332eb232f);
+            
+    
+            var marker_306444e2644704abaea3b5a56a432052 = L.marker(
+                [28.6375319777877, 77.21312550922481],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_e0902550338821b677701c201f12b789 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4181f1c7d5c57debd0a079091674e71d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d29346cb89031442a4cb7a2c5715b64c = $(`<div id="html_d29346cb89031442a4cb7a2c5715b64c" style="width: 100.0%; height: 100.0%;">EV Station 1414<br>Threshold: 0.1<br>Lat: 28.6375, Lon: 77.2131<br>Prob: 0.747</div>`)[0];
+                popup_4181f1c7d5c57debd0a079091674e71d.setContent(html_d29346cb89031442a4cb7a2c5715b64c);
+            
+        
+
+        marker_306444e2644704abaea3b5a56a432052.bindPopup(popup_4181f1c7d5c57debd0a079091674e71d)
+        ;
+
+        
+    
+    
+                marker_306444e2644704abaea3b5a56a432052.setIcon(icon_e0902550338821b677701c201f12b789);
+            
+    
+            var marker_d7c814043cff579305d8139c0281ad05 = L.marker(
+                [28.655571339672512, 77.21350440620763],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_94f5cf61c020cd64fa28a829264e5861 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_177b32cab2ae3de65ec44f420eb77e60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69ae9aeb78102201ca75b39bb6253b94 = $(`<div id="html_69ae9aeb78102201ca75b39bb6253b94" style="width: 100.0%; height: 100.0%;">EV Station 1415<br>Threshold: 0.1<br>Lat: 28.6556, Lon: 77.2135<br>Prob: 0.823</div>`)[0];
+                popup_177b32cab2ae3de65ec44f420eb77e60.setContent(html_69ae9aeb78102201ca75b39bb6253b94);
+            
+        
+
+        marker_d7c814043cff579305d8139c0281ad05.bindPopup(popup_177b32cab2ae3de65ec44f420eb77e60)
+        ;
+
+        
+    
+    
+                marker_d7c814043cff579305d8139c0281ad05.setIcon(icon_94f5cf61c020cd64fa28a829264e5861);
+            
+    
+            var marker_4d47c88c41131c57972c8736078a8f67 = L.marker(
+                [28.673610648889614, 77.21388365135692],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_1d2c9e16f5cad89535ee5c147c740be1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4913b568ea5d3d5af13ec8ce7fc56aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69a30d0567792e72636e4be23e50bf5c = $(`<div id="html_69a30d0567792e72636e4be23e50bf5c" style="width: 100.0%; height: 100.0%;">EV Station 1416<br>Threshold: 0.1<br>Lat: 28.6736, Lon: 77.2139<br>Prob: 0.320</div>`)[0];
+                popup_e4913b568ea5d3d5af13ec8ce7fc56aa.setContent(html_69a30d0567792e72636e4be23e50bf5c);
+            
+        
+
+        marker_4d47c88c41131c57972c8736078a8f67.bindPopup(popup_e4913b568ea5d3d5af13ec8ce7fc56aa)
+        ;
+
+        
+    
+    
+                marker_4d47c88c41131c57972c8736078a8f67.setIcon(icon_1d2c9e16f5cad89535ee5c147c740be1);
+            
+    
+            var marker_f4023db19ba4e10aec738acf2266453b = L.marker(
+                [28.69164990541478, 77.21426324492556],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_130fee218f5e8e0c02d7eb2fc460d416 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f84084fdd2b1a4eecc05caf95ffc150 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbcde93c1e767ec5321636c00c0caa02 = $(`<div id="html_cbcde93c1e767ec5321636c00c0caa02" style="width: 100.0%; height: 100.0%;">EV Station 1417<br>Threshold: 0.1<br>Lat: 28.6916, Lon: 77.2143<br>Prob: 0.474</div>`)[0];
+                popup_6f84084fdd2b1a4eecc05caf95ffc150.setContent(html_cbcde93c1e767ec5321636c00c0caa02);
+            
+        
+
+        marker_f4023db19ba4e10aec738acf2266453b.bindPopup(popup_6f84084fdd2b1a4eecc05caf95ffc150)
+        ;
+
+        
+    
+    
+                marker_f4023db19ba4e10aec738acf2266453b.setIcon(icon_130fee218f5e8e0c02d7eb2fc460d416);
+            
+    
+            var marker_84cb2ee5eb10863e1e4923922fb0d914 = L.marker(
+                [28.709689109223792, 77.21464318716669],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_10fd1ba49f57b837be35c125c23ec61d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e39cb26e84a7f798d967c905f3d2bcb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fe53e66d27f69d8a05f60bcbb7f71db = $(`<div id="html_7fe53e66d27f69d8a05f60bcbb7f71db" style="width: 100.0%; height: 100.0%;">EV Station 1418<br>Threshold: 0.1<br>Lat: 28.7097, Lon: 77.2146<br>Prob: 0.170</div>`)[0];
+                popup_e39cb26e84a7f798d967c905f3d2bcb5.setContent(html_7fe53e66d27f69d8a05f60bcbb7f71db);
+            
+        
+
+        marker_84cb2ee5eb10863e1e4923922fb0d914.bindPopup(popup_e39cb26e84a7f798d967c905f3d2bcb5)
+        ;
+
+        
+    
+    
+                marker_84cb2ee5eb10863e1e4923922fb0d914.setIcon(icon_10fd1ba49f57b837be35c125c23ec61d);
+            
+    
+            var marker_3f6c2e482b33a256ffbce1bb7bdded46 = L.marker(
+                [28.52896054057156, 77.23128594671239],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_54790716118c33f1c1a64f07d5c43f0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65fa0918907b8f8e86f8eeb09986756b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99da050cd0e0cdbd6f0b80f2d542741b = $(`<div id="html_99da050cd0e0cdbd6f0b80f2d542741b" style="width: 100.0%; height: 100.0%;">EV Station 1442<br>Threshold: 0.1<br>Lat: 28.5290, Lon: 77.2313<br>Prob: 0.625</div>`)[0];
+                popup_65fa0918907b8f8e86f8eeb09986756b.setContent(html_99da050cd0e0cdbd6f0b80f2d542741b);
+            
+        
+
+        marker_3f6c2e482b33a256ffbce1bb7bdded46.bindPopup(popup_65fa0918907b8f8e86f8eeb09986756b)
+        ;
+
+        
+    
+    
+                marker_3f6c2e482b33a256ffbce1bb7bdded46.setIcon(icon_54790716118c33f1c1a64f07d5c43f0f);
+            
+    
+            var marker_d8c55140c20f4d1f4988d5d29177330a = L.marker(
+                [28.54699996836222, 77.2316662344203],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_04924f808f65e5dba6db510bddc64a4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_996edd4d032be1787011bc7175caa823 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0403aa1e4febb971396adc574aee743f = $(`<div id="html_0403aa1e4febb971396adc574aee743f" style="width: 100.0%; height: 100.0%;">EV Station 1443<br>Threshold: 0.1<br>Lat: 28.5470, Lon: 77.2317<br>Prob: 0.511</div>`)[0];
+                popup_996edd4d032be1787011bc7175caa823.setContent(html_0403aa1e4febb971396adc574aee743f);
+            
+        
+
+        marker_d8c55140c20f4d1f4988d5d29177330a.bindPopup(popup_996edd4d032be1787011bc7175caa823)
+        ;
+
+        
+    
+    
+                marker_d8c55140c20f4d1f4988d5d29177330a.setIcon(icon_04924f808f65e5dba6db510bddc64a4c);
+            
+    
+            var marker_8e30c4fdcf751028d538995772bfe401 = L.marker(
+                [28.565039343547927, 77.23204687197729],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f0d0212858a0afdf9132d7517e1d4ddd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_232f05b8d6ccb681f4e2145f3d6300f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98a04e89732a79e144c92dc43771f60f = $(`<div id="html_98a04e89732a79e144c92dc43771f60f" style="width: 100.0%; height: 100.0%;">EV Station 1444<br>Threshold: 0.1<br>Lat: 28.5650, Lon: 77.2320<br>Prob: 0.592</div>`)[0];
+                popup_232f05b8d6ccb681f4e2145f3d6300f4.setContent(html_98a04e89732a79e144c92dc43771f60f);
+            
+        
+
+        marker_8e30c4fdcf751028d538995772bfe401.bindPopup(popup_232f05b8d6ccb681f4e2145f3d6300f4)
+        ;
+
+        
+    
+    
+                marker_8e30c4fdcf751028d538995772bfe401.setIcon(icon_f0d0212858a0afdf9132d7517e1d4ddd);
+            
+    
+            var marker_14b71c76f1a095144299c50af6a85760 = L.marker(
+                [28.583078666104246, 77.23242785963656],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_eae65d916714e679f68d3d7d93182d74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcbca02175663fda475aeb18efb6d924 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6f4d486e988b3b299e348c1ed8b5020 = $(`<div id="html_e6f4d486e988b3b299e348c1ed8b5020" style="width: 100.0%; height: 100.0%;">EV Station 1445<br>Threshold: 0.1<br>Lat: 28.5831, Lon: 77.2324<br>Prob: 0.715</div>`)[0];
+                popup_bcbca02175663fda475aeb18efb6d924.setContent(html_e6f4d486e988b3b299e348c1ed8b5020);
+            
+        
+
+        marker_14b71c76f1a095144299c50af6a85760.bindPopup(popup_bcbca02175663fda475aeb18efb6d924)
+        ;
+
+        
+    
+    
+                marker_14b71c76f1a095144299c50af6a85760.setIcon(icon_eae65d916714e679f68d3d7d93182d74);
+            
+    
+            var marker_cfc680dceb4e5fc9327dd330114308b0 = L.marker(
+                [28.60111793600682, 77.2328091976516],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_bda51b08cc29c0a63ea81027f38db11f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a4745237d252731213bbef8789102b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84d6887f598d9ea2dd4452c23421885e = $(`<div id="html_84d6887f598d9ea2dd4452c23421885e" style="width: 100.0%; height: 100.0%;">EV Station 1446<br>Threshold: 0.1<br>Lat: 28.6011, Lon: 77.2328<br>Prob: 0.585</div>`)[0];
+                popup_4a4745237d252731213bbef8789102b0.setContent(html_84d6887f598d9ea2dd4452c23421885e);
+            
+        
+
+        marker_cfc680dceb4e5fc9327dd330114308b0.bindPopup(popup_4a4745237d252731213bbef8789102b0)
+        ;
+
+        
+    
+    
+                marker_cfc680dceb4e5fc9327dd330114308b0.setIcon(icon_bda51b08cc29c0a63ea81027f38db11f);
+            
+    
+            var marker_c28c1fd4286d1e0ad23eb21ddc9bd0c8 = L.marker(
+                [28.619157153231242, 77.23319088627623],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_ebd5fca8a31299291beb3692fa3ce56b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17eaa8c9f0ef7c4e1b3dbd64c46c4940 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6bea17957803f6c8b9c8f0940c49ea0 = $(`<div id="html_b6bea17957803f6c8b9c8f0940c49ea0" style="width: 100.0%; height: 100.0%;">EV Station 1447<br>Threshold: 0.1<br>Lat: 28.6192, Lon: 77.2332<br>Prob: 0.544</div>`)[0];
+                popup_17eaa8c9f0ef7c4e1b3dbd64c46c4940.setContent(html_b6bea17957803f6c8b9c8f0940c49ea0);
+            
+        
+
+        marker_c28c1fd4286d1e0ad23eb21ddc9bd0c8.bindPopup(popup_17eaa8c9f0ef7c4e1b3dbd64c46c4940)
+        ;
+
+        
+    
+    
+                marker_c28c1fd4286d1e0ad23eb21ddc9bd0c8.setIcon(icon_ebd5fca8a31299291beb3692fa3ce56b);
+            
+    
+            var marker_0219eba19e6a335eac809d46f604617d = L.marker(
+                [28.63719631775317, 77.23357292576468],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_bade007ba85c3e4a7f04bde92729a5ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_548f6028406b72c62ae7801b82f93f20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_693a839def4245f2683f4aaa81ee43ea = $(`<div id="html_693a839def4245f2683f4aaa81ee43ea" style="width: 100.0%; height: 100.0%;">EV Station 1448<br>Threshold: 0.1<br>Lat: 28.6372, Lon: 77.2336<br>Prob: 0.905</div>`)[0];
+                popup_548f6028406b72c62ae7801b82f93f20.setContent(html_693a839def4245f2683f4aaa81ee43ea);
+            
+        
+
+        marker_0219eba19e6a335eac809d46f604617d.bindPopup(popup_548f6028406b72c62ae7801b82f93f20)
+        ;
+
+        
+    
+    
+                marker_0219eba19e6a335eac809d46f604617d.setIcon(icon_bade007ba85c3e4a7f04bde92729a5ec);
+            
+    
+            var marker_0ff9cb5b897948793a29a209b1c364f8 = L.marker(
+                [28.65523542954824, 77.23395531637138],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_842438d8e00e19dd974d38216edb2ff5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a83d115f6f827ffe7a53b832ae807c04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_646f4b18952198e4ebd18afd5b482537 = $(`<div id="html_646f4b18952198e4ebd18afd5b482537" style="width: 100.0%; height: 100.0%;">EV Station 1449<br>Threshold: 0.1<br>Lat: 28.6552, Lon: 77.2340<br>Prob: 0.364</div>`)[0];
+                popup_a83d115f6f827ffe7a53b832ae807c04.setContent(html_646f4b18952198e4ebd18afd5b482537);
+            
+        
+
+        marker_0ff9cb5b897948793a29a209b1c364f8.bindPopup(popup_a83d115f6f827ffe7a53b832ae807c04)
+        ;
+
+        
+    
+    
+                marker_0ff9cb5b897948793a29a209b1c364f8.setIcon(icon_842438d8e00e19dd974d38216edb2ff5);
+            
+    
+            var marker_63b238bfcc8a3d111f774de242b318e2 = L.marker(
+                [28.52862331133539, 77.25171211912264],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_9576de0c98589c36b23c8569199db642 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c494c50e2582f81206c54ea83d1b9f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb19bb346b7ea3216eb53788ed233d28 = $(`<div id="html_fb19bb346b7ea3216eb53788ed233d28" style="width: 100.0%; height: 100.0%;">EV Station 1476<br>Threshold: 0.1<br>Lat: 28.5286, Lon: 77.2517<br>Prob: 0.790</div>`)[0];
+                popup_6c494c50e2582f81206c54ea83d1b9f8.setContent(html_fb19bb346b7ea3216eb53788ed233d28);
+            
+        
+
+        marker_63b238bfcc8a3d111f774de242b318e2.bindPopup(popup_6c494c50e2582f81206c54ea83d1b9f8)
+        ;
+
+        
+    
+    
+                marker_63b238bfcc8a3d111f774de242b318e2.setIcon(icon_9576de0c98589c36b23c8569199db642);
+            
+    
+            var marker_f9d82d45916ab437e704f6ed62d362a5 = L.marker(
+                [28.546662487245356, 77.2520958810103],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_bb54e0900593b76c5764a2274a8cd6d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a978f1217bf2f1730055b4640dace3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71e27ddbfb5a28b032c633b08a35346e = $(`<div id="html_71e27ddbfb5a28b032c633b08a35346e" style="width: 100.0%; height: 100.0%;">EV Station 1477<br>Threshold: 0.1<br>Lat: 28.5467, Lon: 77.2521<br>Prob: 0.678</div>`)[0];
+                popup_3a978f1217bf2f1730055b4640dace3c.setContent(html_71e27ddbfb5a28b032c633b08a35346e);
+            
+        
+
+        marker_f9d82d45916ab437e704f6ed62d362a5.bindPopup(popup_3a978f1217bf2f1730055b4640dace3c)
+        ;
+
+        
+    
+    
+                marker_f9d82d45916ab437e704f6ed62d362a5.setIcon(icon_bb54e0900593b76c5764a2274a8cd6d2);
+            
+    
+            var marker_831c294764b575e25826281ac3a52447 = L.marker(
+                [28.56470161046664, 77.25247999593952],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_d78789119c46fef5b942ca1f65747ac7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3853feb84b39e1e615e68e7c9da4e76a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c445ec6a4594427fbfc99586bfda599 = $(`<div id="html_0c445ec6a4594427fbfc99586bfda599" style="width: 100.0%; height: 100.0%;">EV Station 1478<br>Threshold: 0.1<br>Lat: 28.5647, Lon: 77.2525<br>Prob: 0.676</div>`)[0];
+                popup_3853feb84b39e1e615e68e7c9da4e76a.setContent(html_0c445ec6a4594427fbfc99586bfda599);
+            
+        
+
+        marker_831c294764b575e25826281ac3a52447.bindPopup(popup_3853feb84b39e1e615e68e7c9da4e76a)
+        ;
+
+        
+    
+    
+                marker_831c294764b575e25826281ac3a52447.setIcon(icon_d78789119c46fef5b942ca1f65747ac7);
+            
+    
+            var marker_072125a4dc19535b663ba832350a51ef = L.marker(
+                [28.58274068097477, 77.25286446416574],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_2ad6be040d8949705f53ca163f988d85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f14d7ec9e9340616de4e3e2daaa0b4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44b5507cda4c6bc5f1cb6bf5b00afcbc = $(`<div id="html_44b5507cda4c6bc5f1cb6bf5b00afcbc" style="width: 100.0%; height: 100.0%;">EV Station 1479<br>Threshold: 0.1<br>Lat: 28.5827, Lon: 77.2529<br>Prob: 0.545</div>`)[0];
+                popup_1f14d7ec9e9340616de4e3e2daaa0b4e.setContent(html_44b5507cda4c6bc5f1cb6bf5b00afcbc);
+            
+        
+
+        marker_072125a4dc19535b663ba832350a51ef.bindPopup(popup_1f14d7ec9e9340616de4e3e2daaa0b4e)
+        ;
+
+        
+    
+    
+                marker_072125a4dc19535b663ba832350a51ef.setIcon(icon_2ad6be040d8949705f53ca163f988d85);
+            
+    
+            var marker_3e66c5213d1e80d065721849b10c3abc = L.marker(
+                [28.5102440398137, 77.27175105891048],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_3d5383a344320c768b7fd3e01843b2ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fdf7171df2be9ff9ad3693e18cf7c89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_010aa651217477133a364cbc1b1a8771 = $(`<div id="html_010aa651217477133a364cbc1b1a8771" style="width: 100.0%; height: 100.0%;">EV Station 1509<br>Threshold: 0.1<br>Lat: 28.5102, Lon: 77.2718<br>Prob: 0.168</div>`)[0];
+                popup_5fdf7171df2be9ff9ad3693e18cf7c89.setContent(html_010aa651217477133a364cbc1b1a8771);
+            
+        
+
+        marker_3e66c5213d1e80d065721849b10c3abc.bindPopup(popup_5fdf7171df2be9ff9ad3693e18cf7c89)
+        ;
+
+        
+    
+    
+                marker_3e66c5213d1e80d065721849b10c3abc.setIcon(icon_3d5383a344320c768b7fd3e01843b2ed);
+            
+    
+            var marker_e63ef21c4497095dc916b1538a42f2b4 = L.marker(
+                [28.564360805007468, 77.2729127666048],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_2305fcb5467ef64f4e8286fde3a7bbeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_147a2d0710e620c5181820205a02ee99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_307c8b4e313c5fb0e582082948429793 = $(`<div id="html_307c8b4e313c5fb0e582082948429793" style="width: 100.0%; height: 100.0%;">EV Station 1512<br>Threshold: 0.1<br>Lat: 28.5644, Lon: 77.2729<br>Prob: 0.539</div>`)[0];
+                popup_147a2d0710e620c5181820205a02ee99.setContent(html_307c8b4e313c5fb0e582082948429793);
+            
+        
+
+        marker_e63ef21c4497095dc916b1538a42f2b4.bindPopup(popup_147a2d0710e620c5181820205a02ee99)
+        ;
+
+        
+    
+    
+                marker_e63ef21c4497095dc916b1538a42f2b4.setIcon(icon_2305fcb5467ef64f4e8286fde3a7bbeb);
+            
+    
+            var marker_ee9c6af24512db68de490e8d5277114c = L.marker(
+                [28.618477095022023, 77.27407768272404],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_6ea7a6443eae7b95f08c8baa34224b03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d591bce87f5df50e69936d83ea61f82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7db6ac78cdbd197c8fcdf58c14ce8d0c = $(`<div id="html_7db6ac78cdbd197c8fcdf58c14ce8d0c" style="width: 100.0%; height: 100.0%;">EV Station 1515<br>Threshold: 0.1<br>Lat: 28.6185, Lon: 77.2741<br>Prob: 0.239</div>`)[0];
+                popup_9d591bce87f5df50e69936d83ea61f82.setContent(html_7db6ac78cdbd197c8fcdf58c14ce8d0c);
+            
+        
+
+        marker_ee9c6af24512db68de490e8d5277114c.bindPopup(popup_9d591bce87f5df50e69936d83ea61f82)
+        ;
+
+        
+    
+    
+                marker_ee9c6af24512db68de490e8d5277114c.setIcon(icon_6ea7a6443eae7b95f08c8baa34224b03);
+            
+    
+            var marker_a43a63edd08e8bd47376632d006a27aa = L.marker(
+                [28.636515752650155, 77.27446670228576],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_8dd2b5ce383e23cb41c21305810b3ab4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b6c871ec2b21887bb45879b02484604 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef85430075fea7f8d63f8fb03fde1f47 = $(`<div id="html_ef85430075fea7f8d63f8fb03fde1f47" style="width: 100.0%; height: 100.0%;">EV Station 1516<br>Threshold: 0.1<br>Lat: 28.6365, Lon: 77.2745<br>Prob: 0.570</div>`)[0];
+                popup_6b6c871ec2b21887bb45879b02484604.setContent(html_ef85430075fea7f8d63f8fb03fde1f47);
+            
+        
+
+        marker_a43a63edd08e8bd47376632d006a27aa.bindPopup(popup_6b6c871ec2b21887bb45879b02484604)
+        ;
+
+        
+    
+    
+                marker_a43a63edd08e8bd47376632d006a27aa.setIcon(icon_8dd2b5ce383e23cb41c21305810b3ab4);
+            
+    
+            var marker_401d69f13e98b0e914cd43c671fd2e22 = L.marker(
+                [28.491862160631648, 77.29178306067305],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_847eab00fded12ac2857ca9c61b40e4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2e984fd09f8099e1ce3ed7080fa4a11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d488eb862cf34f17b92608e1f73feedf = $(`<div id="html_d488eb862cf34f17b92608e1f73feedf" style="width: 100.0%; height: 100.0%;">EV Station 1542<br>Threshold: 0.1<br>Lat: 28.4919, Lon: 77.2918<br>Prob: 0.433</div>`)[0];
+                popup_c2e984fd09f8099e1ce3ed7080fa4a11.setContent(html_d488eb862cf34f17b92608e1f73feedf);
+            
+        
+
+        marker_401d69f13e98b0e914cd43c671fd2e22.bindPopup(popup_c2e984fd09f8099e1ce3ed7080fa4a11)
+        ;
+
+        
+    
+    
+                marker_401d69f13e98b0e914cd43c671fd2e22.setIcon(icon_847eab00fded12ac2857ca9c61b40e4a);
+            
+    
+            var marker_7f4795cd0aa66dc1f00219cae70165ba = L.marker(
+                [28.509900931553556, 77.29217305208054],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f5fe37a959bd3bb676c0c28082bf9650 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abdbe9f3653d6703b7090e40d05bb2fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f9ca015d610024a67b8b9746ece9561 = $(`<div id="html_5f9ca015d610024a67b8b9746ece9561" style="width: 100.0%; height: 100.0%;">EV Station 1543<br>Threshold: 0.1<br>Lat: 28.5099, Lon: 77.2922<br>Prob: 0.203</div>`)[0];
+                popup_abdbe9f3653d6703b7090e40d05bb2fb.setContent(html_5f9ca015d610024a67b8b9746ece9561);
+            
+        
+
+        marker_7f4795cd0aa66dc1f00219cae70165ba.bindPopup(popup_abdbe9f3653d6703b7090e40d05bb2fb)
+        ;
+
+        
+    
+    
+                marker_7f4795cd0aa66dc1f00219cae70165ba.setIcon(icon_f5fe37a959bd3bb676c0c28082bf9650);
+            
+    
+            var marker_4f9e29cfa7eb1f287778aa3125c4ddec = L.marker(
+                [28.545978314945927, 77.2929541118738],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f57fa4e7f36c22b343fb90244cad9dfc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fdeb993e11eb88066ba7af1766da206 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fbdfd7b9ec28a59611c3a204b7c16b9 = $(`<div id="html_5fbdfd7b9ec28a59611c3a204b7c16b9" style="width: 100.0%; height: 100.0%;">EV Station 1545<br>Threshold: 0.1<br>Lat: 28.5460, Lon: 77.2930<br>Prob: 0.102</div>`)[0];
+                popup_9fdeb993e11eb88066ba7af1766da206.setContent(html_5fbdfd7b9ec28a59611c3a204b7c16b9);
+            
+        
+
+        marker_4f9e29cfa7eb1f287778aa3125c4ddec.bindPopup(popup_9fdeb993e11eb88066ba7af1766da206)
+        ;
+
+        
+    
+    
+                marker_4f9e29cfa7eb1f287778aa3125c4ddec.setIcon(icon_f57fa4e7f36c22b343fb90244cad9dfc);
+            
+    
+            var marker_3190e69ee54b5a6617d3b6ebe753bf8d = L.marker(
+                [28.600093993535445, 77.2941283979055],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_fa44cc6abe37f0cbf66e136d0f563ac6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ed380c162be4461fcf46c7a63f85c23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f9c78ba381374603b41aa81c5e57d03 = $(`<div id="html_1f9c78ba381374603b41aa81c5e57d03" style="width: 100.0%; height: 100.0%;">EV Station 1548<br>Threshold: 0.1<br>Lat: 28.6001, Lon: 77.2941<br>Prob: 0.321</div>`)[0];
+                popup_3ed380c162be4461fcf46c7a63f85c23.setContent(html_1f9c78ba381374603b41aa81c5e57d03);
+            
+        
+
+        marker_3190e69ee54b5a6617d3b6ebe753bf8d.bindPopup(popup_3ed380c162be4461fcf46c7a63f85c23)
+        ;
+
+        
+    
+    
+                marker_3190e69ee54b5a6617d3b6ebe753bf8d.setIcon(icon_fa44cc6abe37f0cbf66e136d0f563ac6);
+            
+    
+            var marker_8b100de12b03d95d1d44143ae37ad240 = L.marker(
+                [28.6181324472335, 77.29452054664853],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_a89777ae35f145c5b505010d42115463 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2977e649332623543f72addd5487777f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_032d984fe8083c73a320aefca8702b03 = $(`<div id="html_032d984fe8083c73a320aefca8702b03" style="width: 100.0%; height: 100.0%;">EV Station 1549<br>Threshold: 0.1<br>Lat: 28.6181, Lon: 77.2945<br>Prob: 0.790</div>`)[0];
+                popup_2977e649332623543f72addd5487777f.setContent(html_032d984fe8083c73a320aefca8702b03);
+            
+        
+
+        marker_8b100de12b03d95d1d44143ae37ad240.bindPopup(popup_2977e649332623543f72addd5487777f)
+        ;
+
+        
+    
+    
+                marker_8b100de12b03d95d1d44143ae37ad240.setIcon(icon_a89777ae35f145c5b505010d42115463);
+            
+    
+            var marker_bffe6bb63a44f25013e0cba14c988514 = L.marker(
+                [28.63617084797458, 77.29491305585937],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_260644fdea8a38e27d6c02062cf531b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8722d766a0c4f84e8bfc6513015f1f6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f056b423cd83343e1018c021b18c4b8f = $(`<div id="html_f056b423cd83343e1018c021b18c4b8f" style="width: 100.0%; height: 100.0%;">EV Station 1550<br>Threshold: 0.1<br>Lat: 28.6362, Lon: 77.2949<br>Prob: 0.618</div>`)[0];
+                popup_8722d766a0c4f84e8bfc6513015f1f6f.setContent(html_f056b423cd83343e1018c021b18c4b8f);
+            
+        
+
+        marker_bffe6bb63a44f25013e0cba14c988514.bindPopup(popup_8722d766a0c4f84e8bfc6513015f1f6f)
+        ;
+
+        
+    
+    
+                marker_bffe6bb63a44f25013e0cba14c988514.setIcon(icon_260644fdea8a38e27d6c02062cf531b4);
+            
+    
+            var marker_d1fe1c0f5d04dc02451721db5a827bbc = L.marker(
+                [28.654209195734072, 77.29530592579944],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_3a68afe4f76f600a6158d30bafccc3ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cd1bc11dba75b3d6f31fc871953078d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e31dfbdd343de11e95cc8ae514382ea = $(`<div id="html_6e31dfbdd343de11e95cc8ae514382ea" style="width: 100.0%; height: 100.0%;">EV Station 1551<br>Threshold: 0.1<br>Lat: 28.6542, Lon: 77.2953<br>Prob: 0.498</div>`)[0];
+                popup_7cd1bc11dba75b3d6f31fc871953078d.setContent(html_6e31dfbdd343de11e95cc8ae514382ea);
+            
+        
+
+        marker_d1fe1c0f5d04dc02451721db5a827bbc.bindPopup(popup_7cd1bc11dba75b3d6f31fc871953078d)
+        ;
+
+        
+    
+    
+                marker_d1fe1c0f5d04dc02451721db5a827bbc.setIcon(icon_3a68afe4f76f600a6158d30bafccc3ce);
+            
+    
+            var marker_488a8eced184e971c1d71c085cc4b8e7 = L.marker(
+                [28.67224749048733, 77.29569915673054],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_fc1620b824e9a810d9e979978b75842c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28ef38183d3e8ad80a6de2b3e115b87a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6649b68b26d9aa2519182e0d6e110ea = $(`<div id="html_d6649b68b26d9aa2519182e0d6e110ea" style="width: 100.0%; height: 100.0%;">EV Station 1552<br>Threshold: 0.1<br>Lat: 28.6722, Lon: 77.2957<br>Prob: 0.115</div>`)[0];
+                popup_28ef38183d3e8ad80a6de2b3e115b87a.setContent(html_d6649b68b26d9aa2519182e0d6e110ea);
+            
+        
+
+        marker_488a8eced184e971c1d71c085cc4b8e7.bindPopup(popup_28ef38183d3e8ad80a6de2b3e115b87a)
+        ;
+
+        
+    
+    
+                marker_488a8eced184e971c1d71c085cc4b8e7.setIcon(icon_fc1620b824e9a810d9e979978b75842c);
+            
+    
+            var marker_0feb12a7f694922c6db1572fc18607e3 = L.marker(
+                [28.69028573220976, 77.29609274891479],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f0ef9450c8b825d135f3d2435a17627f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d984382cbac8d18640776cd9714eafa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_071d2532ef66ec400ca6cf3e3de02ab5 = $(`<div id="html_071d2532ef66ec400ca6cf3e3de02ab5" style="width: 100.0%; height: 100.0%;">EV Station 1553<br>Threshold: 0.1<br>Lat: 28.6903, Lon: 77.2961<br>Prob: 0.213</div>`)[0];
+                popup_3d984382cbac8d18640776cd9714eafa.setContent(html_071d2532ef66ec400ca6cf3e3de02ab5);
+            
+        
+
+        marker_0feb12a7f694922c6db1572fc18607e3.bindPopup(popup_3d984382cbac8d18640776cd9714eafa)
+        ;
+
+        
+    
+    
+                marker_0feb12a7f694922c6db1572fc18607e3.setIcon(icon_f0ef9450c8b825d135f3d2435a17627f);
+            
+    
+            var marker_b43daea6682f385734f8fe3667e89913 = L.marker(
+                [28.74440013894628, 77.29727569561297],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_0be7fd24810054fd4e3625f7e88e455b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55c0ee9a2b0c9649354c54b4e638f0bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e329bc4120525b2d046d89d7831188e3 = $(`<div id="html_e329bc4120525b2d046d89d7831188e3" style="width: 100.0%; height: 100.0%;">EV Station 1556<br>Threshold: 0.1<br>Lat: 28.7444, Lon: 77.2973<br>Prob: 0.202</div>`)[0];
+                popup_55c0ee9a2b0c9649354c54b4e638f0bc.setContent(html_e329bc4120525b2d046d89d7831188e3);
+            
+        
+
+        marker_b43daea6682f385734f8fe3667e89913.bindPopup(popup_55c0ee9a2b0c9649354c54b4e638f0bc)
+        ;
+
+        
+    
+    
+                marker_b43daea6682f385734f8fe3667e89913.setIcon(icon_0be7fd24810054fd4e3625f7e88e455b);
+            
+    
+            var marker_e67ea6fffb40a2d6ae9db0c299fd41b6 = L.marker(
+                [28.401322891563154, 77.31023935797243],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_04805ecef4731c462ee7bd1fd497f1b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f275abda5e7d1f24327431675dbcdbb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60a766fc426f315592bce549cb4dd5b8 = $(`<div id="html_60a766fc426f315592bce549cb4dd5b8" style="width: 100.0%; height: 100.0%;">EV Station 1571<br>Threshold: 0.1<br>Lat: 28.4013, Lon: 77.3102<br>Prob: 0.243</div>`)[0];
+                popup_f275abda5e7d1f24327431675dbcdbb6.setContent(html_60a766fc426f315592bce549cb4dd5b8);
+            
+        
+
+        marker_e67ea6fffb40a2d6ae9db0c299fd41b6.bindPopup(popup_f275abda5e7d1f24327431675dbcdbb6)
+        ;
+
+        
+    
+    
+                marker_e67ea6fffb40a2d6ae9db0c299fd41b6.setIcon(icon_04805ecef4731c462ee7bd1fd497f1b5);
+            
+    
+            var marker_f4fc7ade2ceb3ae6cfed394f6c3ad69a = L.marker(
+                [28.473477680620597, 77.31180813129828],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_acfde14a12b222bf58fee63599f696c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d81ae2126944da86c24482c5113111fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b87987c58e6cb043dbea8570310f6d74 = $(`<div id="html_b87987c58e6cb043dbea8570310f6d74" style="width: 100.0%; height: 100.0%;">EV Station 1575<br>Threshold: 0.1<br>Lat: 28.4735, Lon: 77.3118<br>Prob: 0.145</div>`)[0];
+                popup_d81ae2126944da86c24482c5113111fc.setContent(html_b87987c58e6cb043dbea8570310f6d74);
+            
+        
+
+        marker_f4fc7ade2ceb3ae6cfed394f6c3ad69a.bindPopup(popup_d81ae2126944da86c24482c5113111fc)
+        ;
+
+        
+    
+    
+                marker_f4fc7ade2ceb3ae6cfed394f6c3ad69a.setIcon(icon_acfde14a12b222bf58fee63599f696c5);
+            
+    
+            var marker_f8afa95cc64ba195e5bffa754c4f1e24 = L.marker(
+                [28.563669977743537, 77.31377723526718],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_de154d010c2ed148a668b879ac3de6be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdb67294b8f5a3d7478ce98b9442f9a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e058d87be9f5f69ea0099d30b1239a8b = $(`<div id="html_e058d87be9f5f69ea0099d30b1239a8b" style="width: 100.0%; height: 100.0%;">EV Station 1580<br>Threshold: 0.1<br>Lat: 28.5637, Lon: 77.3138<br>Prob: 0.150</div>`)[0];
+                popup_fdb67294b8f5a3d7478ce98b9442f9a3.setContent(html_e058d87be9f5f69ea0099d30b1239a8b);
+            
+        
+
+        marker_f8afa95cc64ba195e5bffa754c4f1e24.bindPopup(popup_fdb67294b8f5a3d7478ce98b9442f9a3)
+        ;
+
+        
+    
+    
+                marker_f8afa95cc64ba195e5bffa754c4f1e24.setIcon(icon_de154d010c2ed148a668b879ac3de6be);
+            
+    
+            var marker_ad3e31d9c474e50cf20a5d2e74df709b = L.marker(
+                [28.63582286214785, 77.31535904870377],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_6a31f8cd7b99c103efd94684cde4ef90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36b2da47c6fd8fc971760725a1f5b55b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce6d656bb34510cb381f79504d0e3daa = $(`<div id="html_ce6d656bb34510cb381f79504d0e3daa" style="width: 100.0%; height: 100.0%;">EV Station 1584<br>Threshold: 0.1<br>Lat: 28.6358, Lon: 77.3154<br>Prob: 0.580</div>`)[0];
+                popup_36b2da47c6fd8fc971760725a1f5b55b.setContent(html_ce6d656bb34510cb381f79504d0e3daa);
+            
+        
+
+        marker_ad3e31d9c474e50cf20a5d2e74df709b.bindPopup(popup_36b2da47c6fd8fc971760725a1f5b55b)
+        ;
+
+        
+    
+    
+                marker_ad3e31d9c474e50cf20a5d2e74df709b.setIcon(icon_6a31f8cd7b99c103efd94684cde4ef90);
+            
+    
+            var marker_22247a65cc117c42614ecebe068f9f4e = L.marker(
+                [28.65386095064064, 77.3157554112345],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_582355400a188115ca33c2e0da4de44f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24964e7f49df2ffaed24b292e83d6a05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c307ff69068c2e982824b75c818581e6 = $(`<div id="html_c307ff69068c2e982824b75c818581e6" style="width: 100.0%; height: 100.0%;">EV Station 1585<br>Threshold: 0.1<br>Lat: 28.6539, Lon: 77.3158<br>Prob: 0.152</div>`)[0];
+                popup_24964e7f49df2ffaed24b292e83d6a05.setContent(html_c307ff69068c2e982824b75c818581e6);
+            
+        
+
+        marker_22247a65cc117c42614ecebe068f9f4e.bindPopup(popup_24964e7f49df2ffaed24b292e83d6a05)
+        ;
+
+        
+    
+    
+                marker_22247a65cc117c42614ecebe068f9f4e.setIcon(icon_582355400a188115ca33c2e0da4de44f);
+            
+    
+            var marker_5351e1157e9c9942eb21aa457eae6541 = L.marker(
+                [28.671898986040684, 77.31615213796152],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_208cd788405d8be20e88e4847f0abdba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ad071e58f2764d757b774d2f239da42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ca280ee6bfff6ffc11c329c63e61362 = $(`<div id="html_9ca280ee6bfff6ffc11c329c63e61362" style="width: 100.0%; height: 100.0%;">EV Station 1586<br>Threshold: 0.1<br>Lat: 28.6719, Lon: 77.3162<br>Prob: 0.586</div>`)[0];
+                popup_8ad071e58f2764d757b774d2f239da42.setContent(html_9ca280ee6bfff6ffc11c329c63e61362);
+            
+        
+
+        marker_5351e1157e9c9942eb21aa457eae6541.bindPopup(popup_8ad071e58f2764d757b774d2f239da42)
+        ;
+
+        
+    
+    
+                marker_5351e1157e9c9942eb21aa457eae6541.setIcon(icon_208cd788405d8be20e88e4847f0abdba);
+            
+    
+            var marker_4eb3dc2cec1a5d14e46b70585ffae7e8 = L.marker(
+                [28.689936968323288, 77.3165492291493],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_7279d970f066a9cce37db94e379986cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0afd82c6fcf0ed7a952719af7caa19c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58eb2733a0c880fc398d94cabf624191 = $(`<div id="html_58eb2733a0c880fc398d94cabf624191" style="width: 100.0%; height: 100.0%;">EV Station 1587<br>Threshold: 0.1<br>Lat: 28.6899, Lon: 77.3165<br>Prob: 0.335</div>`)[0];
+                popup_0afd82c6fcf0ed7a952719af7caa19c7.setContent(html_58eb2733a0c880fc398d94cabf624191);
+            
+        
+
+        marker_4eb3dc2cec1a5d14e46b70585ffae7e8.bindPopup(popup_0afd82c6fcf0ed7a952719af7caa19c7)
+        ;
+
+        
+    
+    
+                marker_4eb3dc2cec1a5d14e46b70585ffae7e8.setIcon(icon_7279d970f066a9cce37db94e379986cc);
+            
+    
+            var marker_20dd1d509ec9072de993f7ea1279ff0f = L.marker(
+                [28.491167268409843, 77.33261903330609],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_a4e16346185e86197defd877f6ff10a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9091848cc06fa305d06cc44f33a5454 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27a2a577c9919b15ef19bffdd9345386 = $(`<div id="html_27a2a577c9919b15ef19bffdd9345386" style="width: 100.0%; height: 100.0%;">EV Station 1610<br>Threshold: 0.1<br>Lat: 28.4912, Lon: 77.3326<br>Prob: 0.106</div>`)[0];
+                popup_a9091848cc06fa305d06cc44f33a5454.setContent(html_27a2a577c9919b15ef19bffdd9345386);
+            
+        
+
+        marker_20dd1d509ec9072de993f7ea1279ff0f.bindPopup(popup_a9091848cc06fa305d06cc44f33a5454)
+        ;
+
+        
+    
+    
+                marker_20dd1d509ec9072de993f7ea1279ff0f.setIcon(icon_a4e16346185e86197defd877f6ff10a4);
+            
+    
+            var marker_b31270aad679e4f5275c2b57943a2980 = L.marker(
+                [28.563319956337224, 77.33420892687649],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_816e2f287a964cb7f70bd95f792f4d63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6c9605c94da3a4074203cfd1f980f1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33396c2ef2417d2c9c2b7023dcaca5e6 = $(`<div id="html_33396c2ef2417d2c9c2b7023dcaca5e6" style="width: 100.0%; height: 100.0%;">EV Station 1614<br>Threshold: 0.1<br>Lat: 28.5633, Lon: 77.3342<br>Prob: 0.195</div>`)[0];
+                popup_f6c9605c94da3a4074203cfd1f980f1e.setContent(html_33396c2ef2417d2c9c2b7023dcaca5e6);
+            
+        
+
+        marker_b31270aad679e4f5275c2b57943a2980.bindPopup(popup_f6c9605c94da3a4074203cfd1f980f1e)
+        ;
+
+        
+    
+    
+                marker_b31270aad679e4f5275c2b57943a2980.setIcon(icon_816e2f287a964cb7f70bd95f792f4d63);
+            
+    
+            var marker_d7addee37d44ff3cbdb941f604183b1d = L.marker(
+                [28.61743391528323, 77.33540518989366],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_a8b84871558bf991de389692303c6e0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a3f8dfc1c8d3f0cfba849f80686a79c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab43f25309debe40b75f05181c73ccb7 = $(`<div id="html_ab43f25309debe40b75f05181c73ccb7" style="width: 100.0%; height: 100.0%;">EV Station 1617<br>Threshold: 0.1<br>Lat: 28.6174, Lon: 77.3354<br>Prob: 0.120</div>`)[0];
+                popup_0a3f8dfc1c8d3f0cfba849f80686a79c.setContent(html_ab43f25309debe40b75f05181c73ccb7);
+            
+        
+
+        marker_d7addee37d44ff3cbdb941f604183b1d.bindPopup(popup_0a3f8dfc1c8d3f0cfba849f80686a79c)
+        ;
+
+        
+    
+    
+                marker_d7addee37d44ff3cbdb941f604183b1d.setIcon(icon_a8b84871558bf991de389692303c6e0b);
+            
+    
+            var marker_6cab35cb4d0f4f9e70cd8593b19b44bb = L.marker(
+                [28.6535096223032, 77.33620453247332],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_22412d6d4fd6d8d04a84ceed5792383d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e12c5b69e510f45df44beb1eb6832855 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92c243427fe1691a81aab7d8d3adfe30 = $(`<div id="html_92c243427fe1691a81aab7d8d3adfe30" style="width: 100.0%; height: 100.0%;">EV Station 1619<br>Threshold: 0.1<br>Lat: 28.6535, Lon: 77.3362<br>Prob: 0.230</div>`)[0];
+                popup_e12c5b69e510f45df44beb1eb6832855.setContent(html_92c243427fe1691a81aab7d8d3adfe30);
+            
+        
+
+        marker_6cab35cb4d0f4f9e70cd8593b19b44bb.bindPopup(popup_e12c5b69e510f45df44beb1eb6832855)
+        ;
+
+        
+    
+    
+                marker_6cab35cb4d0f4f9e70cd8593b19b44bb.setIcon(icon_22412d6d4fd6d8d04a84ceed5792383d);
+            
+    
+            var marker_4545e357b64ed5e4bea4ef2eb6633fce = L.marker(
+                [28.67154739605552, 77.33660475473182],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_78f73dc5165b5513cdda19fcb4d7a4be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b244f67ef60264bf9f4098ec774460e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84f2c77a782a361f4ff870011caaba55 = $(`<div id="html_84f2c77a782a361f4ff870011caaba55" style="width: 100.0%; height: 100.0%;">EV Station 1620<br>Threshold: 0.1<br>Lat: 28.6715, Lon: 77.3366<br>Prob: 0.252</div>`)[0];
+                popup_8b244f67ef60264bf9f4098ec774460e.setContent(html_84f2c77a782a361f4ff870011caaba55);
+            
+        
+
+        marker_4545e357b64ed5e4bea4ef2eb6633fce.bindPopup(popup_8b244f67ef60264bf9f4098ec774460e)
+        ;
+
+        
+    
+    
+                marker_4545e357b64ed5e4bea4ef2eb6633fce.setIcon(icon_78f73dc5165b5513cdda19fcb4d7a4be);
+            
+    
+            var marker_35efdc89867cd79e2f21bd78798b1761 = L.marker(
+                [28.68958511660296, 77.33700534465832],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_a75694b91a562154c96c9224b895eea5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ef3a0bf7a4af361c002d12b8729da54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28d08a40c64e0ea0c73576a6dcc82039 = $(`<div id="html_28d08a40c64e0ea0c73576a6dcc82039" style="width: 100.0%; height: 100.0%;">EV Station 1621<br>Threshold: 0.1<br>Lat: 28.6896, Lon: 77.3370<br>Prob: 0.233</div>`)[0];
+                popup_4ef3a0bf7a4af361c002d12b8729da54.setContent(html_28d08a40c64e0ea0c73576a6dcc82039);
+            
+        
+
+        marker_35efdc89867cd79e2f21bd78798b1761.bindPopup(popup_4ef3a0bf7a4af361c002d12b8729da54)
+        ;
+
+        
+    
+    
+                marker_35efdc89867cd79e2f21bd78798b1761.setIcon(icon_a75694b91a562154c96c9224b895eea5);
+            
+    
+            var marker_c96bbd74b05975faaca80aea2daeea81 = L.marker(
+                [28.418662745071927, 77.35143858617317],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_0364d22858d682838e962b9938d13210 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3188bbbf482edcfc7b145eb142584d8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_616af0f8d65ae5e47f5f52ca264cc67b = $(`<div id="html_616af0f8d65ae5e47f5f52ca264cc67b" style="width: 100.0%; height: 100.0%;">EV Station 1640<br>Threshold: 0.1<br>Lat: 28.4187, Lon: 77.3514<br>Prob: 0.109</div>`)[0];
+                popup_3188bbbf482edcfc7b145eb142584d8d.setContent(html_616af0f8d65ae5e47f5f52ca264cc67b);
+            
+        
+
+        marker_c96bbd74b05975faaca80aea2daeea81.bindPopup(popup_3188bbbf482edcfc7b145eb142584d8d)
+        ;
+
+        
+    
+    
+                marker_c96bbd74b05975faaca80aea2daeea81.setIcon(icon_0364d22858d682838e962b9938d13210);
+            
+    
+            var marker_6f54bdae292256ad66947b98764e651d = L.marker(
+                [28.653155210924563, 77.35665328631096],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f173f8f6b8831db86d5dc6631c6df3a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f8f83368808095043d06633290b111c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6b4b324a7eb546190a70373f7113e33 = $(`<div id="html_e6b4b324a7eb546190a70373f7113e33" style="width: 100.0%; height: 100.0%;">EV Station 1653<br>Threshold: 0.1<br>Lat: 28.6532, Lon: 77.3567<br>Prob: 0.379</div>`)[0];
+                popup_1f8f83368808095043d06633290b111c.setContent(html_e6b4b324a7eb546190a70373f7113e33);
+            
+        
+
+        marker_6f54bdae292256ad66947b98764e651d.bindPopup(popup_1f8f83368808095043d06633290b111c)
+        ;
+
+        
+    
+    
+                marker_6f54bdae292256ad66947b98764e651d.setIcon(icon_f173f8f6b8831db86d5dc6631c6df3a8);
+            
+    
+            var marker_862430d55803b1b161bfca22aabfc17a = L.marker(
+                [28.634760419778342, 77.37669483083408],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_30745cf06851232121bd332c3211ffa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5e6b7aa13c3efdfb0c12b909a0c667d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54b291a9f6178e2b8354345c6feb4fb0 = $(`<div id="html_54b291a9f6178e2b8354345c6feb4fb0" style="width: 100.0%; height: 100.0%;">EV Station 1686<br>Threshold: 0.1<br>Lat: 28.6348, Lon: 77.3767<br>Prob: 0.134</div>`)[0];
+                popup_d5e6b7aa13c3efdfb0c12b909a0c667d.setContent(html_54b291a9f6178e2b8354345c6feb4fb0);
+            
+        
+
+        marker_862430d55803b1b161bfca22aabfc17a.bindPopup(popup_d5e6b7aa13c3efdfb0c12b909a0c667d)
+        ;
+
+        
+    
+    
+                marker_862430d55803b1b161bfca22aabfc17a.setIcon(icon_30745cf06851232121bd332c3211ffa5);
+            
+    
+            var marker_d2db3e6ca35f2dbf91db4f695a0f6d05 = L.marker(
+                [28.652797716709355, 77.37710166954282],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_8b4a30303ca37e9d8fda9d2f0f4f8f57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b09a0f655140a7b294870b7d7255fbe6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2a4d19913a653cf69f085d585d50136 = $(`<div id="html_e2a4d19913a653cf69f085d585d50136" style="width: 100.0%; height: 100.0%;">EV Station 1687<br>Threshold: 0.1<br>Lat: 28.6528, Lon: 77.3771<br>Prob: 0.113</div>`)[0];
+                popup_b09a0f655140a7b294870b7d7255fbe6.setContent(html_e2a4d19913a653cf69f085d585d50136);
+            
+        
+
+        marker_d2db3e6ca35f2dbf91db4f695a0f6d05.bindPopup(popup_b09a0f655140a7b294870b7d7255fbe6)
+        ;
+
+        
+    
+    
+                marker_d2db3e6ca35f2dbf91db4f695a0f6d05.setIcon(icon_8b4a30303ca37e9d8fda9d2f0f4f8f57);
+            
+    
+            var marker_6d627e0f0d5f70c39579ceea27ac7d26 = L.marker(
+                [28.67083496028345, 77.37750888206165],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_f619a4d37e6120ba3038adfac1591b28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcce7de8c1fe06c1fa2f7f7af3d9fba6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed4b0628e0614da75dc2b1ad793d7340 = $(`<div id="html_ed4b0628e0614da75dc2b1ad793d7340" style="width: 100.0%; height: 100.0%;">EV Station 1688<br>Threshold: 0.1<br>Lat: 28.6708, Lon: 77.3775<br>Prob: 0.130</div>`)[0];
+                popup_bcce7de8c1fe06c1fa2f7f7af3d9fba6.setContent(html_ed4b0628e0614da75dc2b1ad793d7340);
+            
+        
+
+        marker_6d627e0f0d5f70c39579ceea27ac7d26.bindPopup(popup_bcce7de8c1fe06c1fa2f7f7af3d9fba6)
+        ;
+
+        
+    
+    
+                marker_6d627e0f0d5f70c39579ceea27ac7d26.setIcon(icon_f619a4d37e6120ba3038adfac1591b28);
+            
+    
+            var marker_1a542df3f3fddf20788a6075c5fb1538 = L.marker(
+                [28.562251463448582, 77.39550179249709],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_3909db69b5b1f920608903a21c29299b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ddfd1e94725cea3e5fea9ec1cf9b735 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c1bd99231088792ff81e9d9873cd6d2 = $(`<div id="html_2c1bd99231088792ff81e9d9873cd6d2" style="width: 100.0%; height: 100.0%;">EV Station 1716<br>Threshold: 0.1<br>Lat: 28.5623, Lon: 77.3955<br>Prob: 0.103</div>`)[0];
+                popup_3ddfd1e94725cea3e5fea9ec1cf9b735.setContent(html_2c1bd99231088792ff81e9d9873cd6d2);
+            
+        
+
+        marker_1a542df3f3fddf20788a6075c5fb1538.bindPopup(popup_3ddfd1e94725cea3e5fea9ec1cf9b735)
+        ;
+
+        
+    
+    
+                marker_1a542df3f3fddf20788a6075c5fb1538.setIcon(icon_3909db69b5b1f920608903a21c29299b);
+            
+    
+            var marker_9d32e610fabc6546717ec5cbe6562eaa = L.marker(
+                [28.58028870547398, 77.39591061740036],
+                {
+}
+            ).addTo(map_cfe36348c1839e404e8ea07f38138785);
+        
+    
+            var icon_ace4666cea3f4231bf33a34990d7f4f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_192dd9713a7836597936045473c0cd13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abd5df13135e0f6d400aff1dd307c14f = $(`<div id="html_abd5df13135e0f6d400aff1dd307c14f" style="width: 100.0%; height: 100.0%;">EV Station 1717<br>Threshold: 0.1<br>Lat: 28.5803, Lon: 77.3959<br>Prob: 0.184</div>`)[0];
+                popup_192dd9713a7836597936045473c0cd13.setContent(html_abd5df13135e0f6d400aff1dd307c14f);
+            
+        
+
+        marker_9d32e610fabc6546717ec5cbe6562eaa.bindPopup(popup_192dd9713a7836597936045473c0cd13)
+        ;
+
+        
+    
+    
+                marker_9d32e610fabc6546717ec5cbe6562eaa.setIcon(icon_ace4666cea3f4231bf33a34990d7f4f4);
+            
+</script>
+</html>
