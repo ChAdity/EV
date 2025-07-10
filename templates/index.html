@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Charging Station Placement Predictor</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #10b981;
+            --accent-color: #f59e0b;
+            --dark-color: #1f2937;
+            --light-color: #f8fafc;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            color: white;
+            text-align: center;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 10px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-input {
+            border-radius: 10px;
+            border: 2px solid #e5e7eb;
+            padding: 12px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .feature-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .map-container {
+            height: 500px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prediction-result {
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .prediction-suitable {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+        }
+        
+        .prediction-not-suitable {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .nav-tabs .nav-link {
+            border-radius: 10px 10px 0 0;
+            border: none;
+            color: var(--dark-color);
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        
+        .nav-tabs .nav-link.active {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .alert-info {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border: none;
+            color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1 class="display-4 mb-3">
+                <i class="fas fa-charging-station me-3"></i>
+                EV Charging Station Placement Predictor
+            </h1>
+            <p class="lead">AI-powered system for predicting optimal Electric Vehicle charging station locations using advanced machine learning algorithms</p>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalModels">3</div>
+                        <div>ML Models</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalPredictions">2,083</div>
+                        <div>Predictions</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number">19</div>
+                        <div>Features</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div>Cities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Left Panel -->
+            <div class="col-lg-4">
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-tabs mb-3" id="mainTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="predict-tab" data-bs-toggle="tab" data-bs-target="#predict" type="button" role="tab">
+                            <i class="fas fa-magic me-2"></i>Predict
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="analysis-tab" data-bs-toggle="tab" data-bs-target="#analysis" type="button" role="tab">
+                            <i class="fas fa-chart-line me-2"></i>Analysis
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="mainTabContent">
+                    <!-- Prediction Tab -->
+                    <div class="tab-pane fade show active" id="predict" role="tabpanel">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-map-marker-alt me-2"></i>Location Prediction</h5>
+                            </div>
+                            <div class="card-body">
+                                <form id="predictionForm">
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <label class="form-label">Latitude</label>
+                                            <input type="number" class="form-control feature-input" id="latitude" step="0.0001" value="28.6139" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Longitude</label>
+                                            <input type="number" class="form-control feature-input" id="longitude" step="0.0001" value="77.209" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label">ML Model</label>
+                                        <select class="form-select feature-input" id="modelSelect">
+                                            <option value="xgboost">XGBoost</option>
+                                            <option value="catboost">CatBoost</option>
+                                            <option value="gradient_boosting">Gradient Boosting</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="alert alert-info">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        <strong>Quick Features:</strong> Use the sliders below for common location types
+                                    </div>
+
+                                    <!-- Quick Presets -->
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <button type="button" class="btn btn-outline-primary btn-sm w-100" onclick="setCommercialArea()">
+                                                <i class="fas fa-building me-1"></i>Commercial
+                                            </button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="button" class="btn btn-outline-primary btn-sm w-100" onclick="setResidentialArea()">
+                                                <i class="fas fa-home me-1"></i>Residential
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature Inputs -->
+                                    <h6 class="mt-4 mb-3">Location Features</h6>
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Parking</label>
+                                            <input type="number" class="form-control feature-input" id="parking" min="0" value="0">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Restaurants</label>
+                                            <input type="number" class="form-control feature-input" id="restaurant" min="0" value="0">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Schools</label>
+                                            <input type="number" class="form-control feature-input" id="school" min="0" value="0">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Commercial</label>
+                                            <input type="number" class="form-control feature-input" id="commercial" min="0" value="0">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Population</label>
+                                            <input type="number" class="form-control feature-input" id="population" min="0" value="5000">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label class="form-label">Parks</label>
+                                            <input type="number" class="form-control feature-input" id="park" min="0" value="0">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary w-100 mt-3">
+                                        <i class="fas fa-magic me-2"></i>Predict Location Suitability
+                                    </button>
+                                </form>
+
+                                <!-- Loading -->
+                                <div class="loading" id="loadingPrediction">
+                                    <div class="spinner"></div>
+                                    <p>Analyzing location...</p>
+                                </div>
+
+                                <!-- Results -->
+                                <div id="predictionResults"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analysis Tab -->
+                    <div class="tab-pane fade" id="analysis" role="tabpanel">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-chart-bar me-2"></i>Model Analysis</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <button class="btn btn-primary w-100" onclick="loadFeatureImportance()">
+                                        <i class="fas fa-chart-line me-2"></i>Show Feature Importance
+                                    </button>
+                                </div>
+                                <div id="featureImportanceChart">
+                                    <canvas id="importanceChart" width="400" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-database me-2"></i>Existing Predictions</h5>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn btn-outline-primary w-100" onclick="loadExistingPredictions()">
+                                    <i class="fas fa-download me-2"></i>Load Delhi Predictions
+                                </button>
+                                <div id="existingPredictionsData"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Map -->
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0"><i class="fas fa-map me-2"></i>Interactive Map</h5>
+                        <div>
+                            <button class="btn btn-outline-light btn-sm" onclick="showExistingPredictions()">
+                                <i class="fas fa-eye me-1"></i>Show Predictions
+                            </button>
+                            <button class="btn btn-outline-light btn-sm" onclick="clearMap()">
+                                <i class="fas fa-trash me-1"></i>Clear
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div id="map" class="map-container"></div>
+                    </div>
+                </div>
+
+                <!-- Map Legend -->
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h6><i class="fas fa-info-circle me-2"></i>Map Legend</h6>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="badge bg-success me-2">🟢</span> Suitable for EV Station
+                            </div>
+                            <div class="col-md-6">
+                                <span class="badge bg-danger me-2">🔴</span> Not Suitable
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Global variables
+        let map;
+        let markers = [];
+        let currentChart = null;
+
+        // Initialize map
+        function initMap() {
+            map = L.map('map').setView([28.6139, 77.209], 11);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Add click event to map
+            map.on('click', function(e) {
+                document.getElementById('latitude').value = e.latlng.lat.toFixed(4);
+                document.getElementById('longitude').value = e.latlng.lng.toFixed(4);
+            });
+        }
+
+        // Preset functions
+        function setCommercialArea() {
+            document.getElementById('parking').value = '5';
+            document.getElementById('restaurant').value = '10';
+            document.getElementById('commercial').value = '15';
+            document.getElementById('school').value = '2';
+            document.getElementById('population').value = '8000';
+            document.getElementById('park').value = '1';
+        }
+
+        function setResidentialArea() {
+            document.getElementById('parking').value = '2';
+            document.getElementById('restaurant').value = '3';
+            document.getElementById('commercial').value = '2';
+            document.getElementById('school').value = '5';
+            document.getElementById('population').value = '12000';
+            document.getElementById('park').value = '3';
+        }
+
+        // Load statistics
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const stats = await response.json();
+                
+                document.getElementById('totalModels').textContent = stats.total_models;
+                document.getElementById('totalPredictions').textContent = stats.prediction_records.toLocaleString();
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        // Prediction form submission
+        document.getElementById('predictionForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const loadingDiv = document.getElementById('loadingPrediction');
+            const resultsDiv = document.getElementById('predictionResults');
+            
+            loadingDiv.style.display = 'block';
+            resultsDiv.innerHTML = '';
+
+            // Collect form data
+            const locationData = {
+                latitude: parseFloat(document.getElementById('latitude').value),
+                longitude: parseFloat(document.getElementById('longitude').value),
+                parking: parseInt(document.getElementById('parking').value) || 0,
+                restaurant: parseInt(document.getElementById('restaurant').value) || 0,
+                school: parseInt(document.getElementById('school').value) || 0,
+                commercial: parseInt(document.getElementById('commercial').value) || 0,
+                population: parseFloat(document.getElementById('population').value) || 0,
+                park: parseInt(document.getElementById('park').value) || 0,
+                edges: 0,
+                parking_space: 0,
+                civic: 0,
+                node: 0,
+                community_centre: 0,
+                place_of_worship: 0,
+                university: 0,
+                cinema: 0,
+                library: 0,
+                retail: 0,
+                townhall: 0,
+                government: 0,
+                residential: 0
+            };
+
+            const requestData = {
+                locations: [locationData],
+                model_name: document.getElementById('modelSelect').value
+            };
+
+            try {
+                const response = await fetch('/api/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                const result = await response.json();
+                loadingDiv.style.display = 'none';
+
+                if (response.ok) {
+                    const prediction = result.predictions[0];
+                    displayPredictionResult(prediction, result.model_used);
+                    addMarkerToMap(prediction);
+                } else {
+                    resultsDiv.innerHTML = `<div class="alert alert-danger"><i class="fas fa-exclamation-triangle me-2"></i>Error: ${result.detail}</div>`;
+                }
+            } catch (error) {
+                loadingDiv.style.display = 'none';
+                resultsDiv.innerHTML = `<div class="alert alert-danger"><i class="fas fa-exclamation-triangle me-2"></i>Error: ${error.message}</div>`;
+            }
+        });
+
+        function displayPredictionResult(prediction, modelUsed) {
+            const resultsDiv = document.getElementById('predictionResults');
+            const suitabilityClass = prediction.prediction === 1 ? 'prediction-suitable' : 'prediction-not-suitable';
+            const icon = prediction.prediction === 1 ? 'fas fa-check-circle' : 'fas fa-times-circle';
+            
+            resultsDiv.innerHTML = `
+                <div class="prediction-result ${suitabilityClass} mt-3">
+                    <h6><i class="${icon} me-2"></i>${prediction.recommendation}</h6>
+                    <p class="mb-2"><strong>Confidence:</strong> ${(prediction.confidence * 100).toFixed(1)}%</p>
+                    <p class="mb-2"><strong>Model Used:</strong> ${modelUsed.charAt(0).toUpperCase() + modelUsed.slice(1)}</p>
+                    <p class="mb-0"><strong>Location:</strong> ${prediction.latitude.toFixed(4)}, ${prediction.longitude.toFixed(4)}</p>
+                </div>
+            `;
+        }
+
+        function addMarkerToMap(prediction) {
+            // Clear previous markers
+            markers.forEach(marker => map.removeLayer(marker));
+            markers = [];
+
+            const color = prediction.prediction === 1 ? 'green' : 'red';
+            const icon = prediction.prediction === 1 ? '✅' : '❌';
+            
+            const marker = L.marker([prediction.latitude, prediction.longitude])
+                .addTo(map)
+                .bindPopup(`
+                    <strong>${prediction.recommendation}</strong><br>
+                    Confidence: ${(prediction.confidence * 100).toFixed(1)}%<br>
+                    Coordinates: ${prediction.latitude.toFixed(4)}, ${prediction.longitude.toFixed(4)}
+                `);
+            
+            markers.push(marker);
+            map.setView([prediction.latitude, prediction.longitude], 13);
+        }
+
+        function clearMap() {
+            markers.forEach(marker => map.removeLayer(marker));
+            markers = [];
+        }
+
+        async function loadFeatureImportance() {
+            try {
+                const response = await fetch('/api/feature-importance');
+                const importance = await response.json();
+                
+                if (Object.keys(importance).length > 0) {
+                    displayFeatureImportance(importance);
+                }
+            } catch (error) {
+                console.error('Error loading feature importance:', error);
+            }
+        }
+
+        function displayFeatureImportance(importance) {
+            const ctx = document.getElementById('importanceChart').getContext('2d');
+            
+            // Destroy existing chart
+            if (currentChart) {
+                currentChart.destroy();
+            }
+
+            // Use the first model's importance data
+            const modelName = Object.keys(importance)[0];
+            const data = importance[modelName];
+            
+            // Take top 10 features
+            const topFeatures = data.slice(0, 10);
+            
+            currentChart = new Chart(ctx, {
+                type: 'horizontalBar',
+                data: {
+                    labels: topFeatures.map(item => item.feature),
+                    datasets: [{
+                        label: 'Feature Importance',
+                        data: topFeatures.map(item => item.importance),
+                        backgroundColor: 'rgba(37, 99, 235, 0.8)',
+                        borderColor: 'rgba(37, 99, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            beginAtZero: true
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: `Feature Importance (${modelName.toUpperCase()})`
+                        }
+                    }
+                }
+            });
+        }
+
+        async function loadExistingPredictions() {
+            try {
+                const response = await fetch('/api/existing-predictions?limit=50');
+                const data = await response.json();
+                
+                const container = document.getElementById('existingPredictionsData');
+                container.innerHTML = `
+                    <div class="mt-3">
+                        <h6>Delhi Predictions Summary</h6>
+                        <p>Total Records: ${data.total_records.toLocaleString()}</p>
+                        <p>Showing: ${data.returned_records} locations</p>
+                        <button class="btn btn-sm btn-primary" onclick="showExistingPredictionsOnMap(${JSON.stringify(data.predictions).replace(/"/g, '&quot;')})">
+                            <i class="fas fa-map-marker-alt me-1"></i>Show on Map
+                        </button>
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Error loading existing predictions:', error);
+            }
+        }
+
+        function showExistingPredictionsOnMap(predictions) {
+            clearMap();
+            
+            predictions.forEach(pred => {
+                if (pred.prediction === 1) {
+                    const marker = L.marker([pred.latitude, pred.longitude])
+                        .addTo(map)
+                        .bindPopup(`
+                            <strong>Predicted EV Station</strong><br>
+                            Population: ${pred.population.toLocaleString()}<br>
+                            Parking: ${pred.features.parking}<br>
+                            Restaurants: ${pred.features.restaurant}
+                        `);
+                    markers.push(marker);
+                }
+            });
+            
+            if (markers.length > 0) {
+                const group = new L.featureGroup(markers);
+                map.fitBounds(group.getBounds());
+            }
+        }
+
+        async function showExistingPredictions() {
+            try {
+                const response = await fetch('/api/map');
+                const result = await response.json();
+                
+                if (result.map_url) {
+                    // This would ideally load the generated map
+                    loadExistingPredictions();
+                }
+            } catch (error) {
+                console.error('Error showing existing predictions:', error);
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap();
+            loadStats();
+        });
+    </script>
+</body>
+</html>
